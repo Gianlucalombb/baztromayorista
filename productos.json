@@ -1,0 +1,490 @@
+[
+  {
+    "id": 1,
+    "nombre": "Plato Playo 25cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 4399,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/1.png",
+    "paso": 12
+  },
+  {
+    "id": 2,
+    "nombre": "Plato Playo 21cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 3899,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/2.png",
+    "paso": 12
+  },
+  {
+    "id": 10,
+    "nombre": "Plato Postre 19cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 2999,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/3.png",
+    "paso": 12
+  },
+  {
+    "id": 4,
+    "nombre": "Plato Hondo 20,5cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 3899,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/4.png",
+    "paso": 12
+  },
+  {
+    "id": 5,
+    "nombre": "Cuchillo de Carne de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 1500,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/5.png",
+    "paso": 12
+  },
+  {
+    "id": 6,
+    "nombre": "Tenedor de Mesa de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 870,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/6.png",
+    "paso": 12
+  },
+  {
+    "id": 7,
+    "nombre": "Cuchara de Mesa de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 870,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/7.png",
+    "paso": 12
+  },
+  {
+    "id": 8,
+    "nombre": "Cuchillo de Postre de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 1260,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/8.png",
+    "paso": 12
+  },
+  {
+    "id": 9,
+    "nombre": "Tenedor de Postre de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 820,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/9.png",
+    "paso": 12
+  },
+  {
+    "id": 3,
+    "nombre": "Cuchara de Postre de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 820,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/10.png",
+    "paso": 12
+  },
+  {
+    "id": 11,
+    "nombre": "Cuchara de Desayuno de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 575,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/11.png",
+    "paso": 12
+  },
+  {
+    "id": 12,
+    "nombre": "Cuchara de Té de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 430,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/12.png",
+    "paso": 12
+  },
+  {
+    "id": 13,
+    "nombre": "Cuchara de Café de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 350,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/13.png",
+    "paso": 12
+  },
+  {
+    "id": 14,
+    "nombre": "Cuchillo Untador de Acero Inoxidable",
+    "categoria": "cubiertos",
+    "precio": 659,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/14.png",
+    "paso": 12
+  },
+  {
+    "id": 15,
+    "nombre": "Copa Agua 300ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 1599,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/36.png",
+    "paso": 12
+  },
+  {
+    "id": 16,
+    "nombre": "Copa Vino 250ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 1599,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/37.png",
+    "paso": 12
+  },
+  {
+    "id": 17,
+    "nombre": "Copa Champagne 210ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 1599,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/38.png",
+    "paso": 12
+  },
+  {
+    "id": 18,
+    "nombre": "Copa Barone Agua 490ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 2299,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/39.png",
+    "paso": 12
+  },
+    {
+    "id": 19,
+    "nombre": "Copa Brunello 490ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 2350,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/45.png",
+    "paso": 12
+  },
+    {
+    "id": 20,
+    "nombre": "Copa Gin 600ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 2999,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/40.png",
+    "paso": 1
+  },
+    {
+    "id": 21,
+    "nombre": "Copa Martini 250ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 2899,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/41.png",
+    "paso": 1
+  },
+    {
+    "id": 22,
+    "nombre": "Copa Dublin Cerveza 400ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 2450,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/46.png",
+    "paso": 12
+  },
+    {
+    "id": 23,
+    "nombre": "Vaso Jamaica 350ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1200,
+    "unidad": "BULTO X 48",
+    "img": "img/vajilla/23.png",
+    "paso": 24
+  },
+    {
+    "id": 24,
+    "nombre": "Vaso Oslo 100ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 890,
+    "unidad": "BULTO X 72",
+    "img": "img/vajilla/24.png",
+    "paso": 24
+  },{
+      "id": 25,
+    "nombre": "Vaso Oslo 150ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 970,
+    "unidad": "BULTO X 72",
+    "img": "img/vajilla/25.png",
+    "paso": 24
+    },
+    {
+    "id": 26,
+    "nombre": "Vaso Oslo 400ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1250,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/26.png",
+    "paso": 12
+  },
+    {
+    "id": 27,
+    "nombre": "Vaso Oslo 520ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1650,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/27.png",
+    "paso": 12
+  },
+    {
+    "id": 28,
+    "nombre": "Vaso Pekin 350ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1300,
+    "unidad": "BULTO X 72",
+    "img": "img/vajilla/28.png",
+    "paso": 24
+  },
+    {
+    "id": 29,
+    "nombre": "Copa Agua Noruega 250ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1300,
+    "unidad": "BULTO X 48",
+    "img": "img/vajilla/29.png",
+    "paso": 24
+  },
+    {
+    "id": 30,
+    "nombre": "Copa Postre Noruega 250ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1570,
+    "unidad": "BULTO X 36",
+    "img": "img/vajilla/30.png",
+    "paso": 24
+  },
+    {
+    "id": 31,
+    "nombre": "Copon Gourmet 450ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1690,
+    "unidad": "BULTO X 36",
+    "img": "img/vajilla/32.png",
+    "paso": 24
+  },
+  {
+    "id": 49,
+    "nombre": "Vaso Dubai 480ml Nadir",
+    "categoria": "vasos_y_copas",
+    "precio": 1599,
+    "unidad": "BULTO X 24",
+    "img": "img/vajilla/49.png",
+    "paso": 24
+  },
+    {
+    "id": 32,
+    "nombre": "Vaso Pinta 540ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1750,
+    "unidad": "BULTO X 36",
+    "img": "img/vajilla/31.png",
+    "paso": 24
+  },
+    {
+    "id": 33,
+    "nombre": "Vaso Whisky Tenesse 320ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1320,
+    "unidad": "BULTO X 48",
+    "img": "img/vajilla/33.png",
+    "paso": 24
+  },
+    {
+    "id": 34,
+    "nombre": "Vaso Shot Tijuana 60ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 880,
+    "unidad": "BULTO X 72",
+    "img": "img/vajilla/35.png",
+    "paso": 24
+  },
+    {
+    "id": 35,
+    "nombre": "Jarra Vallarta 1,5L Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 4100,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/34.png",
+    "paso": 1
+  },
+    {
+    "id": 36,
+    "nombre": "Jarra Acapulco 1,25L Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 4100,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/47.png",
+    "paso": 1
+  },
+    {
+    "id": 37,
+    "nombre": "Bowl 17cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 8999,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/15.png",
+    "paso": 1
+  },
+    {
+    "id": 38,
+    "nombre": "Bowl 13,5cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 3999,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/16.png",
+    "paso": 1
+  },
+    {
+    "id": 39,
+    "nombre": "Bowl 12cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 3899,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/17.png",
+    "paso": 1
+  },
+    {
+    "id": 40,
+    "nombre": "Cazuela 14cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 4250,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/18.png",
+    "paso": 1
+  },
+    {
+    "id": 41,
+    "nombre": "Cazuela 12cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 3900,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/19.png"
+  },
+    {
+    "id": 42,
+    "nombre": "Cazuela 10cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 2250,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/20.png"
+  },
+    {
+    "id": 43,
+    "nombre": "Cazuela 8cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 1650,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/21.png"
+  },
+    {
+    "id": 44,
+    "nombre": "Cazuela 7cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 1490,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/22.png"
+  }
+  ,
+    {
+    "id": 45,
+    "nombre": "Jarrito de Café con plato 150ml Porcelana",
+    "categoria": "cafeteria",
+    "precio": 4199,
+    "unidad": "BULTO X 10",
+    "img": "img/vajilla/44.png",
+    "paso": 10
+  },
+    {
+    "id": 46,
+    "nombre": "Taza de Café con plato 90ml Porcelana",
+    "categoria": "cafeteria",
+    "precio": 3999,
+    "unidad": "BULTO X 10",
+    "img": "img/vajilla/48.png",
+    "paso": 10
+  },
+    {
+    "id": 47,
+    "nombre": "Taza de Desayuno con plato 240ml Porcelana",
+    "categoria": "cafeteria",
+    "precio": 4899,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/42.png",
+    "paso": 12
+  },
+    {
+    "id": 48,
+    "nombre": "Combo 1 - 12 Platos - 12 Copas - 12 Tenedores - 12 Cuchillos ",
+    "categoria": "combos",
+    "precio": 98800,
+    "unidad": "48 Piezas",
+    "img": "img/COMBOS/55.png",
+    "sinPromo": true,
+    "paso": 1
+  },
+    {
+    "id": 50,
+    "nombre": "Combo 2 - 24 Platos - 24 Copas - 24 Tenedores - 24 Cuchillos ",
+    "categoria": "combos",
+    "precio": 198550,
+    "unidad": "96 Piezas",
+    "img": "img/COMBOS/56.png",
+    "sinPromo": true,
+    "paso": 1
+  },
+    {
+    "id": 51,
+    "nombre": "Combo 3 - 48 Platos - 48 Copas - 48 Tenedores - 48 Cuchillos ",
+    "categoria": "combos",
+    "precio": 382850,
+    "unidad": "192 Piezas",
+    "img": "img/COMBOS/57.png",
+    "sinPromo": true,
+    "paso": 1
+  },
+    {
+    "id": 52,
+    "nombre": "Combo 4 - 96 Platos - 96 Copas - 96 Tenedores - 96 Cuchillos ",
+    "categoria": "combos",
+    "precio": 759999,
+    "unidad": "384 Piezas",
+    "img": "img/COMBOS/58.png",
+    "sinPromo": true,
+    "paso": 1
+  },
+    {
+    "id": 53,
+    "nombre": "Combo 5 - 144 Platos - 144 Copas - 144 Tenedores - 144 Cuchillos ",
+    "categoria": "combos",
+    "precio": 1140000,
+    "unidad": "576 Piezas",
+    "img": "img/COMBOS/59.png",
+    "sinPromo": true,
+    "paso": 1
+  },
+    {
+    "id": 54,
+    "nombre": "Combo 6 - 204 Platos - 204 Copas - 204 Tenedores - 204 Cuchillos ",
+    "categoria": "combos",
+    "precio": 1620900,
+    "unidad": "816 Piezas",
+    "img": "img/COMBOS/60.png",
+    "sinPromo": true,
+    "paso": 1
+  }
+]
