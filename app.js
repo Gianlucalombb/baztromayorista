@@ -1,5 +1,5 @@
 // ── CONFIG ──────────────────────────────────────────────────
-const WPP_NUMERO = "5491168660232"; // ← cambiá por tu número
+const WPP_NUMERO = "5491168660232"; 
 
 // ── COLORES POR CATEGORÍA ────────────────────────────────────
 const CAT_COLORS = {
@@ -201,11 +201,11 @@ function buildCardV2(p, i) {
   const colors = CAT_COLORS[p.categoria] || { bar: "#8B5CF6", label: "#8B5CF6" };
   const card = document.createElement("div");
   card.className = "card";
-  card.style.animationDelay = `${i * 35}ms`;
 
+  
   const imgTag = p.img
-    ? `<img src="${p.img}" alt="${p.nombre}" onerror="this.parentElement.classList.add('img-error');this.style.display='none'">`
-    : "";
+  ? `<img src="${p.img}" alt="${p.nombre}" loading="lazy" onerror="this.parentElement.classList.add('img-error');this.style.display='none'">`
+  : "";
 
   const badgeMap = {
   "más vendido": "mas-vendido",
@@ -309,3 +309,12 @@ fetch("productos.json")
     document.getElementById("grid").innerHTML =
       `<p style="padding:2rem;color:#888">Servir con: <code>npx serve .</code></p>`;
   });
+
+  function filtrarDesdeFooter(cat) {
+  catActiva = cat;
+  document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+  const pill = document.querySelector(`.pill[data-cat="${cat}"]`);
+  if (pill) pill.classList.add("active");
+  filtrar();
+  document.querySelector(".filters-bar").scrollIntoView({ behavior: "smooth" });
+}

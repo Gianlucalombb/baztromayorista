@@ -131,7 +131,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1599,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/36.png",
+    "img": "img/vajilla/36.jpg",
     "paso": 12
   },
   {
@@ -140,7 +140,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1599,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/37.png",
+    "img": "img/vajilla/37.jpg",
     "paso": 12
   },
   {
@@ -149,7 +149,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1599,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/38.png",
+    "img": "img/vajilla/38.jpg",
     "paso": 12
   },
   {
@@ -158,7 +158,7 @@
     "categoria": "vasos_y_copas",
     "precio": 2299,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/39.png",
+    "img": "img/vajilla/39.jpg",
     "paso": 12
   },
     {
@@ -167,7 +167,7 @@
     "categoria": "vasos_y_copas",
     "precio": 2350,
     "unidad": "BULTO X 6",
-    "img": "img/vajilla/45.png",
+    "img": "img/vajilla/45.jpg",
     "paso": 12
   },
     {
@@ -176,7 +176,7 @@
     "categoria": "vasos_y_copas",
     "precio": 2999,
     "unidad": "BULTO X 6",
-    "img": "img/vajilla/40.png",
+    "img": "img/vajilla/40.jpg",
     "paso": 1
   },
     {
@@ -185,7 +185,7 @@
     "categoria": "vasos_y_copas",
     "precio": 2899,
     "unidad": "BULTO X 6",
-    "img": "img/vajilla/41.png",
+    "img": "img/vajilla/41.jpg",
     "paso": 1
   },
     {
@@ -194,7 +194,7 @@
     "categoria": "vasos_y_copas",
     "precio": 2450,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/46.png",
+    "img": "img/vajilla/46.jpg",
     "paso": 12
   },
     {
@@ -274,7 +274,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1690,
     "unidad": "BULTO X 36",
-    "img": "img/vajilla/32.png",
+    "img": "img/vajilla/32.jpg",
     "paso": 24
   },
   {
@@ -283,7 +283,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1599,
     "unidad": "BULTO X 24",
-    "img": "img/vajilla/49.png",
+    "img": "img/vajilla/49.jpg",
     "paso": 24
   },
     {
@@ -292,7 +292,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1750,
     "unidad": "BULTO X 36",
-    "img": "img/vajilla/31.png",
+    "img": "img/vajilla/31.jpg",
     "paso": 24
   },
     {
@@ -301,7 +301,7 @@
     "categoria": "vasos_y_copas",
     "precio": 1320,
     "unidad": "BULTO X 48",
-    "img": "img/vajilla/33.png",
+    "img": "img/vajilla/33.jpg",
     "paso": 24
   },
     {
@@ -310,7 +310,7 @@
     "categoria": "vasos_y_copas",
     "precio": 880,
     "unidad": "BULTO X 72",
-    "img": "img/vajilla/35.png",
+    "img": "img/vajilla/35.jpg",
     "paso": 24
   },
     {
@@ -319,7 +319,7 @@
     "categoria": "vasos_y_copas",
     "precio": 4100,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/34.png",
+    "img": "img/vajilla/34.jpg",
     "paso": 1
   },
     {
@@ -328,7 +328,7 @@
     "categoria": "vasos_y_copas",
     "precio": 4100,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/47.png",
+    "img": "img/vajilla/47.jpg",
     "paso": 1
   },
     {
@@ -406,7 +406,7 @@
     "categoria": "cafeteria",
     "precio": 4199,
     "unidad": "BULTO X 10",
-    "img": "img/vajilla/44.png",
+    "img": "img/vajilla/44.jpg",
     "paso": 10
   },
     {
@@ -415,7 +415,7 @@
     "categoria": "cafeteria",
     "precio": 3999,
     "unidad": "BULTO X 10",
-    "img": "img/vajilla/48.png",
+    "img": "img/vajilla/48.jpg",
     "paso": 10
   },
     {
@@ -424,7 +424,7 @@
     "categoria": "cafeteria",
     "precio": 4899,
     "unidad": "BULTO X 12",
-    "img": "img/vajilla/42.png",
+    "img": "img/vajilla/42.jpg",
     "paso": 12
   },
     {
@@ -433,7 +433,7 @@
     "categoria": "combos",
     "precio": 98800,
     "unidad": "48 Piezas",
-    "img": "img/COMBOS/55.png",
+    "img": "img/vajilla/55.jpg",
     "sinPromo": true,
     "paso": 1
   },
@@ -443,7 +443,7 @@
     "categoria": "combos",
     "precio": 198550,
     "unidad": "96 Piezas",
-    "img": "img/COMBOS/56.png",
+    "img": "img/vajilla/56.jpg",
     "sinPromo": true,
     "paso": 1
   },
@@ -453,7 +453,7 @@
     "categoria": "combos",
     "precio": 382850,
     "unidad": "192 Piezas",
-    "img": "img/COMBOS/57.png",
+    "img": "img/vajilla/57.jpg",
     "sinPromo": true,
     "paso": 1
   },
@@ -463,7 +463,7 @@
     "categoria": "combos",
     "precio": 759999,
     "unidad": "384 Piezas",
-    "img": "img/COMBOS/58.png",
+    "img": "img/vajilla/58.jpg",
     "sinPromo": true,
     "paso": 1
   },
@@ -473,7 +473,7 @@
     "categoria": "combos",
     "precio": 1140000,
     "unidad": "576 Piezas",
-    "img": "img/COMBOS/59.png",
+    "img": "img/vajilla/59.jpg",
     "sinPromo": true,
     "paso": 1
   },
@@ -483,7 +483,7 @@
     "categoria": "combos",
     "precio": 1620900,
     "unidad": "816 Piezas",
-    "img": "img/COMBOS/60.png",
+    "img": "img/vajilla/60.jpg",
     "sinPromo": true,
     "paso": 1
   }
