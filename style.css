@@ -267,54 +267,7 @@ h1 {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── MOBILE ─────────────────────────────────────────────────── */
-@media (max-width: 768px) {
-    .hero {
-    background-position: center;
-    justify-content: center;
-    min-height: 100svh;
-    padding: 5rem 0 3rem;
-  }
-    .line2 {
-    font-size: 1.6rem;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .hero-content {
-    max-width: 100%;
-    padding: 2rem 1rem;
-  }
-  .hero-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,.6) 0%,
-      rgba(0,0,0,.85) 100%
-    );
-  }
-  .hero-features {
-    gap: 1rem;
-  }
-  .hero-feature {
-    font-size: .62rem;
-  }
-  .add-btn {
-  padding: .55rem;
-  font-size: .75rem;
-}
 
-.qty-btn {
-  width: 26px;
-  height: 28px;
-  font-size: .85rem;
-}
-
-.qty-input {
-  width: 32px;
-  height: 28px;
-  font-size: .75rem;
-}
-}
 /* ── FILTERS BAR ───────────────────────────────────────────── */
 .filters-bar {
   position:static;
@@ -432,22 +385,7 @@ main {
   box-shadow: 0 8px 24px rgba(0,0,0,.15), 0 0 0 1px #C9922A;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #F0B942, #C9922A);;
-  opacity: 0;
-  transition: opacity .3s;
-  z-index: 3;
-}
 
-.card:hover::before {
-  opacity: 1;
-}
 
 
 
@@ -698,24 +636,7 @@ footer {
   line-height: 1.8;
 }
 
-@media (max-width: 768px) {
-  .footer-top {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .footer-top {
-    grid-template-columns: 1fr;
-  }
-}
-/* ── RESPONSIVE ────────────────────────────────────────────── */
-@media (max-width: 600px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 /* ── QUANTITY CONTROL ────────────────────────────────────────── */
 .card-actions {
@@ -1044,4 +965,68 @@ footer {
 
 .carrito-badge.bump {
   animation: badgeBounce .4s ease;
+}
+
+/* ── MOBILE ─────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+    justify-content: center;
+    min-height: 100svh;
+    padding: 5rem 0 3rem;
+  }
+  .line2 { font-size: 1.6rem; }
+  .hero-content { max-width: 100%; padding: 2rem 1rem; }
+  .hero-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.85) 100%);
+  }
+  .hero-features { gap: 1rem; }
+  .hero-feature { font-size: .62rem; }
+
+  main { padding: 1rem .6rem 5rem; overflow: visible; }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+  }
+
+  .card-inner { padding: .6rem .7rem; }
+  .card-name { font-size: .92rem; font-weight: 700; }
+  .price-num { font-size: 1.4rem; }
+  .price-unit { font-size: .56rem; }
+
+  .card-bottom { gap: .5rem; }
+
+  .card-actions-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: .4rem;
+    width: 100%;
+  }
+
+  .add-btn {
+    font-size: .65rem;
+    padding: .4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+  }
+  .add-btn svg { display: inline; width: 12px; height: 12px; }
+
+  .qty-btn { width: 22px; height: 26px; font-size: .8rem; }
+  .qty-input { width: 28px; height: 26px; font-size: .72rem; }
+
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; }
 }
