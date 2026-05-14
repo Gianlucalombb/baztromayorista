@@ -177,7 +177,7 @@
     "precio": 2999,
     "unidad": "BULTO X 6",
     "img": "img/vajilla/40.jpg",
-    "paso": 1
+    "paso": 6
   },
     {
     "id": 21,
@@ -186,7 +186,7 @@
     "precio": 2899,
     "unidad": "BULTO X 6",
     "img": "img/vajilla/41.jpg",
-    "paso": 1
+    "paso": 6
   },
     {
     "id": 22,
@@ -338,7 +338,7 @@
     "precio": 8999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/15.png",
-    "paso": 1
+    "paso": 2
   },
     {
     "id": 38,
@@ -347,7 +347,7 @@
     "precio": 3999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/16.png",
-    "paso": 1
+    "paso": 2
   },
     {
     "id": 39,
@@ -356,7 +356,7 @@
     "precio": 3899,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/17.png",
-    "paso": 1
+    "paso": 2
   },
     {
     "id": 40,
@@ -365,7 +365,7 @@
     "precio": 4250,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/18.png",
-    "paso": 1
+    "paso": 2
   },
     {
     "id": 41,
@@ -373,7 +373,8 @@
     "categoria": "bowls",
     "precio": 3900,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/19.png"
+    "img": "img/vajilla/19.png",
+    "paso": 2
   },
     {
     "id": 42,
@@ -381,7 +382,8 @@
     "categoria": "bowls",
     "precio": 2250,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/20.png"
+    "img": "img/vajilla/20.png",
+    "paso": 2
   },
     {
     "id": 43,
@@ -389,7 +391,8 @@
     "categoria": "bowls",
     "precio": 1650,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/21.png"
+    "img": "img/vajilla/21.png",
+    "paso": 2
   },
     {
     "id": 44,
@@ -397,14 +400,15 @@
     "categoria": "bowls",
     "precio": 1490,
     "unidad": "VENTA POR UNIDAD",
-    "img": "img/vajilla/22.png"
+    "img": "img/vajilla/22.png",
+    "paso": 2
   }
   ,
     {
     "id": 45,
     "nombre": "Jarrito de Café con plato 150ml Porcelana",
     "categoria": "cafeteria",
-    "precio": 4199,
+    "precio": 4499,
     "unidad": "BULTO X 10",
     "img": "img/vajilla/44.jpg",
     "paso": 10
@@ -413,7 +417,7 @@
     "id": 46,
     "nombre": "Taza de Café con plato 90ml Porcelana",
     "categoria": "cafeteria",
-    "precio": 3999,
+    "precio": 4399,
     "unidad": "BULTO X 10",
     "img": "img/vajilla/48.jpg",
     "paso": 10
@@ -422,7 +426,7 @@
     "id": 47,
     "nombre": "Taza de Desayuno con plato 240ml Porcelana",
     "categoria": "cafeteria",
-    "precio": 4899,
+    "precio": 5399,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/42.jpg",
     "paso": 12
