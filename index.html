@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Baztro Mayorista</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Bricolage+Grotesque:wght@300;400;600;800&family=Oswald:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Bricolage+Grotesque:wght@300;400;600;800&family=Oswald:wght@400;600&family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" type="image/png" href="img/Untitled design (27).png">
 <link rel="apple-touch-icon" href="img/Untitled design (27).png">
@@ -172,6 +172,56 @@
 
   </div>
 </footer>
+<!-- MODAL PRODUCTO -->
+<div class="modal-overlay" id="modal-overlay" onclick="cerrarModal()">
+  <div class="modal" id="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="cerrarModal()">✕</button>
+    <div class="modal-body">
+      <div class="modal-fotos">
+        <div class="modal-foto-principal">
+          <img id="modal-foto-main" src="" alt="">
+        </div>
+        <div class="modal-miniaturas" id="modal-miniaturas"></div>
+      </div>
+      <div class="modal-info">
+        <div class="modal-badge-wrap" id="modal-badge-wrap"></div>
+        <h2 class="modal-nombre" id="modal-nombre"></h2>
+        <div class="modal-linea"></div>
+        <div class="modal-precio-wrap">
+          <span class="modal-precio" id="modal-precio"></span>
+          <span class="modal-unidad" id="modal-unidad"></span>
+        </div>
+        <div class="modal-desc" id="modal-desc"></div>
+        <div class="modal-detalles" id="modal-detalles"></div>
+        <div class="modal-garantias">
+  <div class="modal-garantia-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9922A" stroke-width="2"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+    Envío a todo el país
+  </div>
+  <div class="modal-garantia-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9922A" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Calidad garantizada
+  </div>
+  <div class="modal-garantia-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9922A" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    Todos los medios de pago
+  </div>
+</div>
+        <div class="modal-actions">
+          <div class="qty-control">
+            <button class="qty-btn" id="modal-qty-minus">−</button>
+            <input class="qty-input" type="number" id="modal-qty" value="1" min="1">
+            <button class="qty-btn" id="modal-qty-plus">+</button>
+          </div>
+          <button class="add-btn modal-add-btn" id="modal-add-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- CARRITO FLOTANTE -->
 <div class="carrito-bar" id="carrito-bar">
   <div class="carrito-header" id="carrito-toggle">

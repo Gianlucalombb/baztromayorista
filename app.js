@@ -196,6 +196,93 @@ function enviarPorWpp() {
   const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}${descTxt}\n\n*Total: ${formatPrecio(totalConDesc)}*\n\n¿Tienen todo disponible?`;
   window.open(`https://wa.me/${WPP_NUMERO}?text=${encodeURIComponent(msg)}`, "_blank");
 }
+// ── MODAL ─────────────────────────────────────────────────────
+let productoModal = null;
+
+function abrirModal(id) {
+  const p = productos.find(x => x.id === id);
+  if (!p) return;
+  productoModal = p;
+
+  const paso = p.paso || 1;
+
+  document.getElementById("modal-nombre").textContent = p.nombre;
+  document.getElementById("modal-precio").textContent = formatPrecio(p.precio);
+  document.getElementById("modal-unidad").textContent = p.unidad;
+  document.getElementById("modal-desc").textContent = p.descripcion || "";
+
+  // badge
+  const badgeMap = { "más vendido": "mas-vendido", "oferta": "oferta", "nuevo": "nuevo", "últimos": "ultimos" };
+  const bw = document.getElementById("modal-badge-wrap");
+  bw.innerHTML = p.badge
+    ? `<div class="card-badge ${badgeMap[p.badge] || ""}">${p.badge}</div>`
+    : "";
+
+  // detalles
+  const det = document.getElementById("modal-detalles");
+  det.innerHTML = "";
+  if (p.material) det.innerHTML += `<div class="modal-detalle-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C9922A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>${p.material}</div>`;
+  if (p.medida)   det.innerHTML += `<div class="modal-detalle-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C9922A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>${p.medida}</div>`;
+
+  // fotos
+  const fotos = p.fotos && p.fotos.length ? p.fotos : (p.img ? [p.img] : []);
+  const mainImg = document.getElementById("modal-foto-main");
+  mainImg.src = fotos[0] || "";
+
+  const mins = document.getElementById("modal-miniaturas");
+  mins.innerHTML = "";
+  if (fotos.length > 1) {
+    fotos.forEach((f, i) => {
+      const div = document.createElement("div");
+      div.className = "modal-miniatura" + (i === 0 ? " activa" : "");
+      div.innerHTML = `<img src="${f}" alt="">`;
+      div.onclick = () => {
+        mainImg.src = f;
+        document.querySelectorAll(".modal-miniatura").forEach(m => m.classList.remove("activa"));
+        div.classList.add("activa");
+      };
+      mins.appendChild(div);
+    });
+  }
+
+  // qty
+  const qtyInput = document.getElementById("modal-qty");
+  qtyInput.value = paso;
+  qtyInput.min = paso;
+  qtyInput.step = paso;
+
+  document.getElementById("modal-qty-minus").onclick = () => {
+    qtyInput.value = Math.max(paso, +qtyInput.value - paso);
+  };
+  document.getElementById("modal-qty-plus").onclick = () => {
+    qtyInput.value = Math.min(9999, +qtyInput.value + paso);
+  };
+
+  // botón agregar
+  const addBtn = document.getElementById("modal-add-btn");
+  addBtn.onclick = () => {
+    agregarAlCarrito(p.id, +qtyInput.value);
+    addBtn.innerHTML = "✓ Agregado";
+    addBtn.classList.add("added");
+    setTimeout(() => {
+      addBtn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Agregar al carrito`;
+      addBtn.classList.remove("added");
+    }, 1500);
+  };
+
+  document.getElementById("modal-overlay").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function cerrarModal() {
+  document.getElementById("modal-overlay").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+// cerrar con ESC
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") cerrarModal();
+});
 // ── CARD ──────────────────────────────────────────────────────
 function buildCardV2(p, i) {
   const colors = CAT_COLORS[p.categoria] || { bar: "#8B5CF6", label: "#8B5CF6" };
@@ -227,7 +314,7 @@ const qtyHtml = `
 
 card.innerHTML = `
   <div class="card-topbar" style="background:${colors.bar}"></div>
-  <div class="card-photo ${p.img ? "" : "img-error"}" data-fallback="${p.emoji || "🍽️"}">${badgeHtml}${imgTag}</div>
+  <div class="card-photo ${p.img ? "" : "img-error"}" data-fallback="${p.emoji || "🍽️"}" onclick="abrirModal(${p.id})" style="cursor:pointer">${badgeHtml}${imgTag}</div>
   <div class="card-inner">
     <div class="card-name">${p.nombre}</div>
     <div class="card-bottom">

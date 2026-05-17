@@ -1,4 +1,82 @@
-[
+[{
+    "id": 48,
+    "nombre": "Combo 1 - 12 Personas ",
+    "categoria": "combos",
+    "precio": 98800,
+    "unidad": "48 Piezas",
+    "img": "img/vajilla/55.jpg",
+    "sinPromo": true,
+    "paso": 1,
+    "descripcion": "Todo lo necesario para armar una mesa completa y elegante para reuniones y eventos.",
+    "material": "Incluye 12 platos playos 25 cm, 12 copas y 24 cubiertos de acero inoxidable",
+    "medida": "Ideal para uso diario, eventos y gastronomía"
+  },
+    {
+    "id": 50,
+    "nombre": "Combo 2 - 24 Personas ",
+    "categoria": "combos",
+    "precio": 198550,
+    "unidad": "96 Piezas",
+    "img": "img/vajilla/56.jpg",
+    "sinPromo": true,
+    "paso": 1,
+    "descripcion": "Mesa completa y elegante para reuniones, eventos y gastronomía.",
+    "material": "Incluye 24 platos playos 25 cm, 24 copas y 48 cubiertos de acero inoxidable",
+    "medida": "Ideal para eventos, catering y uso intensivo"
+  },
+    {
+    "id": 51,
+    "nombre": "Combo 3 - 48 Personas ",
+    "categoria": "combos",
+    "precio": 382850,
+    "unidad": "192 Piezas",
+    "img": "img/vajilla/57.jpg",
+    "sinPromo": true,
+    "paso": 1,
+    "descripcion": "La opción ideal para eventos grandes y salones.",
+    "material": "Incluye 48 platos playos 25 cm, 48 copas y 96 cubiertos de acero inoxidable",
+    "medida": "Diseño resistente y práctico para alto uso"
+  },
+    {
+    "id": 52,
+    "nombre": "Combo 4 - 96 Personas ",
+    "categoria": "combos",
+    "precio": 759999,
+    "unidad": "384 Piezas",
+    "img": "img/vajilla/58.jpg",
+    "sinPromo": true,
+    "paso": 1,
+"descripcion": "Perfecto para grandes eventos y emprendimientos gastronómicos.",
+"material": "Incluye 96 platos playos 25 cm, 96 copas y 192 cubiertos de acero inoxidable",
+"medida": "Excelente opción para catering y salones"
+
+  },
+    {
+    "id": 53,
+    "nombre": "Combo 5 - 144 Personas ",
+    "categoria": "combos",
+    "precio": 1140000,
+    "unidad": "576 Piezas",
+    "img": "img/vajilla/59.jpg",
+    "sinPromo": true,
+    "paso": 1,
+"descripcion": "Gran capacidad y excelente presentación para eventos masivos.",
+"material": "Incluye 144 platos playos 25 cm, 144 copas y 288 cubiertos de acero inoxidable",
+"medida": "Ideal para gastronomía, eventos y alquileres"
+  },
+    {
+    "id": 54,
+    "nombre": "Combo 6 - 204 Personas ",
+    "categoria": "combos",
+    "precio": 1620900,
+    "unidad": "816 Piezas",
+    "img": "img/vajilla/60.jpg",
+    "sinPromo": true,
+    "paso": 1,
+    "descripcion": "Combo completo pensado para grandes producciones y eventos.",
+    "material": "Incluye 204 platos playos 25 cm, 204 copas y 408 cubiertos de acero inoxidable",
+    "medida": "Resistente, práctico y listo para uso intensivo"
+  },
   {
     "id": 1,
     "nombre": "Plato Playo 25cm Porcelana Blanca",
@@ -6,7 +84,10 @@
     "precio": 4399,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/1.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Plato de porcelana ideal para uso diario, eventos y gastronomía.",
+    "material": "Porcelana resistente y de excelente terminación",
+    "medida": "Plato playo de 25 cm"
   },
   {
     "id": 2,
@@ -15,7 +96,10 @@
     "precio": 3899,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/2.png",
-    "paso": 12
+    "paso": 12,
+"descripcion": "Ideal para entradas, desayunos y presentaciones elegantes.",
+"material": "Porcelana resistente, práctica y fácil de limpiar",
+"medida": "Plato de entrada de 21 cm"
   },
   {
     "id": 10,
@@ -430,65 +514,5 @@
     "unidad": "BULTO X 12",
     "img": "img/vajilla/42.jpg",
     "paso": 12
-  },
-    {
-    "id": 48,
-    "nombre": "Combo 1 - 12 Platos - 12 Copas - 12 Tenedores - 12 Cuchillos ",
-    "categoria": "combos",
-    "precio": 98800,
-    "unidad": "48 Piezas",
-    "img": "img/vajilla/55.jpg",
-    "sinPromo": true,
-    "paso": 1
-  },
-    {
-    "id": 50,
-    "nombre": "Combo 2 - 24 Platos - 24 Copas - 24 Tenedores - 24 Cuchillos ",
-    "categoria": "combos",
-    "precio": 198550,
-    "unidad": "96 Piezas",
-    "img": "img/vajilla/56.jpg",
-    "sinPromo": true,
-    "paso": 1
-  },
-    {
-    "id": 51,
-    "nombre": "Combo 3 - 48 Platos - 48 Copas - 48 Tenedores - 48 Cuchillos ",
-    "categoria": "combos",
-    "precio": 382850,
-    "unidad": "192 Piezas",
-    "img": "img/vajilla/57.jpg",
-    "sinPromo": true,
-    "paso": 1
-  },
-    {
-    "id": 52,
-    "nombre": "Combo 4 - 96 Platos - 96 Copas - 96 Tenedores - 96 Cuchillos ",
-    "categoria": "combos",
-    "precio": 759999,
-    "unidad": "384 Piezas",
-    "img": "img/vajilla/58.jpg",
-    "sinPromo": true,
-    "paso": 1
-  },
-    {
-    "id": 53,
-    "nombre": "Combo 5 - 144 Platos - 144 Copas - 144 Tenedores - 144 Cuchillos ",
-    "categoria": "combos",
-    "precio": 1140000,
-    "unidad": "576 Piezas",
-    "img": "img/vajilla/59.jpg",
-    "sinPromo": true,
-    "paso": 1
-  },
-    {
-    "id": 54,
-    "nombre": "Combo 6 - 204 Platos - 204 Copas - 204 Tenedores - 204 Cuchillos ",
-    "categoria": "combos",
-    "precio": 1620900,
-    "unidad": "816 Piezas",
-    "img": "img/vajilla/60.jpg",
-    "sinPromo": true,
-    "paso": 1
   }
 ]
