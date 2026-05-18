@@ -87,7 +87,7 @@
     "paso": 12,
     "descripcion": "Plato de porcelana ideal para uso diario, eventos y gastronomía.",
     "material": "Porcelana resistente y de excelente terminación",
-    "medida": "Plato playo de 25 cm"
+    "medida": "25cm de Diámetro y 2cm de Altura."
   },
   {
     "id": 2,
@@ -97,9 +97,9 @@
     "unidad": "BULTO X 12",
     "img": "img/vajilla/2.png",
     "paso": 12,
-"descripcion": "Ideal para entradas, desayunos y presentaciones elegantes.",
-"material": "Porcelana resistente, práctica y fácil de limpiar",
-"medida": "Plato de entrada de 21 cm"
+    "descripcion": "Ideal para entradas, desayunos y presentaciones elegantes.",
+    "material": "Porcelana resistente, práctica y fácil de limpiar",
+    "medida": "21cm de Diámetro y 2cm de Altura."
   },
   {
     "id": 10,
@@ -108,7 +108,11 @@
     "precio": 2999,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/3.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Perfecto para postres, meriendas y mesas modernas.",
+    "material": "Fabricado en porcelana de alta calidad",
+    "medida": "19cm de Diámetro y 2cm de Altura."
+
   },
   {
     "id": 4,
@@ -117,7 +121,10 @@
     "precio": 3899,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/4.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para sopas, pastas y comidas con salsa.",
+    "material": "Porcelana resistente para uso diario y gastronómico",
+    "medida": "20,5cm de Diámetro"
   },
   {
     "id": 5,
@@ -126,7 +133,10 @@
     "precio": 1500,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/5.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Cuchillo ideal para carnes y comidas de uso diario.",
+    "material": "Acero inoxidable resistente y duradero",
+    "medida": "21cm"
   },
   {
     "id": 6,
@@ -135,7 +145,10 @@
     "precio": 870,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/6.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Tenedor práctico y elegante para todo tipo de comidas.",
+    "material": "Fabricado en acero inoxidable",
+    "medida": "19,5cm"
   },
   {
     "id": 7,
@@ -144,7 +157,10 @@
     "precio": 870,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/7.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Cuchara resistente ideal para uso diario y gastronomía.",
+    "material": "Acero inoxidable de excelente calidad",
+    "medida": "19,5cm"
   },
   {
     "id": 8,
@@ -153,7 +169,10 @@
     "precio": 1260,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/8.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Cuchillo práctico para postres y meriendas.",
+    "material": "Acero inoxidable duradero y fácil de limpiar",
+    "medida": "19cm"
   },
   {
     "id": 9,
@@ -162,7 +181,10 @@
     "precio": 820,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/9.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para postres, tortas y meriendas.",
+    "material": "Fabricado en acero inoxidable resistente",
+    "medida": "17,5cm"
   },
   {
     "id": 3,
@@ -171,7 +193,10 @@
     "precio": 820,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/10.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para helados, postres y meriendas.",
+    "material": "Fabricada en acero inoxidable",
+    "medida": "17cm"
   },
   {
     "id": 11,
@@ -180,7 +205,11 @@
     "precio": 575,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/11.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Perfecta para desayunos y meriendas.",
+    "material": "Acero inoxidable resistente y práctico",
+    "medida": "15,5cm"
+
   },
   {
     "id": 12,
@@ -189,7 +218,10 @@
     "precio": 430,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/12.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Cuchara práctica para té, café y uso diario.",
+    "material": "Acero inoxidable de excelente terminación",
+    "medida": "13cm"
   },
   {
     "id": 13,
@@ -198,7 +230,10 @@
     "precio": 350,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/13.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para café y bebidas calientes.",
+    "material": "Fabricada en acero inoxidable",
+    "medida": "10cm"
   },
   {
     "id": 14,
@@ -207,7 +242,10 @@
     "precio": 659,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/14.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para untar manteca, queso crema y mermeladas.",
+    "material": "Fabricado en acero inoxidable resistente",
+    "medida": "15cm"
   },
   {
     "id": 15,
@@ -216,7 +254,10 @@
     "precio": 1599,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/36.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Copa elegante ideal para agua, jugos y bebidas frías.",
+    "material": "Vidrio Nadir resistente y de excelente calidad",
+    "medida": "300ml de Capacidad y 17,5cm de Altura"
   },
   {
     "id": 16,
@@ -225,7 +266,10 @@
     "precio": 1599,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/37.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Ideal para disfrutar vinos con una presentación elegante.",
+    "material": "Fabricada en vidrio Nadir resistente",
+    "medida": "250ml de Capacidad y 16cm de Altura"
   },
   {
     "id": 17,
@@ -234,7 +278,10 @@
     "precio": 1599,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/38.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Perfecta para brindis y celebraciones especiales.",
+    "material": "Vidrio Nadir de excelente terminación",
+    "medida": "210ml de Capacidad y 19cm de Altura"
   },
   {
     "id": 18,
@@ -243,7 +290,10 @@
     "precio": 2299,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/39.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Copa amplia ideal para vinos y tragos especiales.",
+    "material": "Fabricada en vidrio Nadir resistente",
+    "medida": "490ml de Capacidad y 22cm de Altura"
   },
     {
     "id": 19,
@@ -252,7 +302,10 @@
     "precio": 2350,
     "unidad": "BULTO X 6",
     "img": "img/vajilla/45.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Diseño elegante ideal para vinos y degustaciones.",
+    "material": "Vidrio Nadir de alta calidad",
+    "medida": "490ml de Capacidad y 23cm de Altura"
   },
     {
     "id": 20,
@@ -261,7 +314,10 @@
     "precio": 2999,
     "unidad": "BULTO X 6",
     "img": "img/vajilla/40.jpg",
-    "paso": 6
+    "paso": 6,
+    "descripcion": "Perfecta para gin tonic y tragos preparados.",
+    "material": "Fabricada en vidrio Nadir resistente",
+    "medida": "600ml de Capacidad y 20cm de Altura"
   },
     {
     "id": 21,
@@ -270,7 +326,10 @@
     "precio": 2899,
     "unidad": "BULTO X 6",
     "img": "img/vajilla/41.jpg",
-    "paso": 6
+    "paso": 6,
+    "descripcion": "Ideal para martinis y tragos clásicos.",
+    "material": "Vidrio Nadir elegante y resistente",
+    "medida": "250ml de Capacidad y 17cm de Altura"
   },
     {
     "id": 22,
@@ -279,7 +338,10 @@
     "precio": 2450,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/46.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Vaso ideal para cerveza y bebidas bien frías.",
+    "material": "Fabricado en vidrio Nadir resistente",
+    "medida": "400ml de Capacidad y 16cm de Altura"
   },
     {
     "id": 23,
@@ -288,7 +350,10 @@
     "precio": 1200,
     "unidad": "BULTO X 48",
     "img": "img/vajilla/23.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Vaso práctico y elegante para todo tipo de bebidas.",
+    "material": "Vidrio Rigolleau resistente y de excelente calidad",
+    "medida": "350ml de Capacidad y 15cm de Altura"
   },
     {
     "id": 24,
@@ -297,7 +362,10 @@
     "precio": 890,
     "unidad": "BULTO X 72",
     "img": "img/vajilla/24.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Ideal para shots, café y degustaciones.",
+    "material": "Fabricado en vidrio Rigolleau resistente",
+    "medida": "100ml de Capacidad y 6,6cm de Altura"
   },{
       "id": 25,
     "nombre": "Vaso Oslo 150ml Rigolleau",
@@ -305,7 +373,10 @@
     "precio": 970,
     "unidad": "BULTO X 72",
     "img": "img/vajilla/25.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Vaso compacto ideal para agua, jugos y café.",
+    "material": "Vidrio Rigolleau de excelente terminación",
+    "medida": "150ml de Capacidad y 8cm de Altura"
     },
     {
     "id": 26,
@@ -314,7 +385,10 @@
     "precio": 1250,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/26.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Perfecto para gaseosas, tragos y bebidas frías.",
+    "material": "Fabricado en vidrio Rigolleau resistente",
+    "medida": "400ml de Capacidad y 12cm de Altura"
   },
     {
     "id": 27,
@@ -323,7 +397,10 @@
     "precio": 1650,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/27.png",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Vaso amplio ideal para licuados, cerveza y tragos.",
+    "material": "Vidrio Rigolleau de alta calidad",
+    "medida": "520ml de Capacidad y 14cm de Altura"
   },
     {
     "id": 28,
@@ -332,7 +409,10 @@
     "precio": 1300,
     "unidad": "BULTO X 72",
     "img": "img/vajilla/28.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Diseño clásico ideal para agua, jugos y gaseosas.",
+    "material": "Fabricado en vidrio Rigolleau resistente",
+    "medida": "350ml de Capacidad y 10cm de Altura"
   },
     {
     "id": 29,
@@ -341,7 +421,10 @@
     "precio": 1300,
     "unidad": "BULTO X 48",
     "img": "img/vajilla/29.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Copa elegante ideal para agua y bebidas frías.",
+    "material": "Vidrio Rigolleau resistente y duradero",
+    "medida": "250ml de Capacidad y 11cm de Altura"
   },
     {
     "id": 30,
@@ -350,7 +433,10 @@
     "precio": 1570,
     "unidad": "BULTO X 36",
     "img": "img/vajilla/30.png",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Ideal para postres, helados y presentaciones.",
+    "material": "Fabricada en vidrio Rigolleau de excelente calidad",
+    "medida": "250ml de Capacidad y 8cm de Altura"
   },
     {
     "id": 31,
@@ -359,7 +445,10 @@
     "precio": 1690,
     "unidad": "BULTO X 36",
     "img": "img/vajilla/32.jpg",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Copa amplia ideal para tragos, postres y presentaciones.",
+    "material": "Vidrio Rigolleau resistente y de excelente calidad",
+    "medida": "450ml de Capacidad y 12cm de Altura"
   },
   {
     "id": 49,
@@ -368,7 +457,10 @@
     "precio": 1599,
     "unidad": "BULTO X 24",
     "img": "img/vajilla/49.jpg",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Vaso moderno ideal para tragos, gaseosas y bebidas frías.",
+    "material": "Fabricado en vidrio Nadir resistente",
+    "medida": "480ml de Capacidad y 12cm de Altura"
   },
     {
     "id": 32,
@@ -377,7 +469,33 @@
     "precio": 1750,
     "unidad": "BULTO X 36",
     "img": "img/vajilla/31.jpg",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Ideal para cerveza tirada y bebidas bien frías.",
+    "material": "Vidrio Rigolleau resistente y duradero",
+    "medida": "540ml de Capacidad y 15,5cm de Altura"
+  },{
+    "id": 62,
+    "nombre": "Vaso Media Pinta 320ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1450,
+    "unidad": "BULTO X 36",
+    "img": "img/vajilla/62.jpg",
+    "paso": 24,
+    "descripcion": "Perfecto para cerveza, gaseosas y tragos.",
+    "material": "Fabricado en vidrio Rigolleau de excelente calidad",
+    "medida": "320ml de Capacidad y 13cm de Altura"
+  },
+  {
+    "id": 61,
+    "nombre": "Vaso Bruselas 560ml Rigolleau",
+    "categoria": "vasos_y_copas",
+    "precio": 1790,
+    "unidad": "BULTO X 36",
+    "img": "img/vajilla/61.jpg",
+    "paso": 24,
+    "descripcion": "Vaso amplio ideal para cerveza y tragos preparados.",
+    "material": "Vidrio Rigolleau resistente para uso diario",
+    "medida": "560ml de Capacidad y 15,5cm de Altura"
   },
     {
     "id": 33,
@@ -386,7 +504,10 @@
     "precio": 1320,
     "unidad": "BULTO X 48",
     "img": "img/vajilla/33.jpg",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Ideal para whisky, tragos cortos y bebidas con hielo.",
+    "material": "Fabricado en vidrio Rigolleau resistente",
+    "medida": "320ml de Capacidad y 8,5cm de Altura"
   },
     {
     "id": 34,
@@ -395,7 +516,10 @@
     "precio": 880,
     "unidad": "BULTO X 72",
     "img": "img/vajilla/35.jpg",
-    "paso": 24
+    "paso": 24,
+    "descripcion": "Shot ideal para tequila, licores y degustaciones.",
+    "material": "Vidrio Rigolleau de excelente terminación",
+    "medida": "60ml de Capacidad y 7,2cm de Altura"
   },
     {
     "id": 35,
@@ -404,7 +528,10 @@
     "precio": 4100,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/34.jpg",
-    "paso": 1
+    "paso": 1,
+    "descripcion": "Jarra práctica ideal para agua, jugos y bebidas frías.",
+    "material": "Fabricada en vidrio Rigolleau resistente",
+    "medida": "1,5L de Capacidad y 20cm de Altura"
   },
     {
     "id": 36,
@@ -413,7 +540,10 @@
     "precio": 4100,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/47.jpg",
-    "paso": 1
+    "paso": 1,
+    "descripcion": "Ideal para servir bebidas en reuniones y eventos.",
+    "material": "Vidrio Rigolleau de alta calidad",
+    "medida": "1,25L de Capacidad y 21cm de Altura"
   },
     {
     "id": 37,
@@ -422,7 +552,10 @@
     "precio": 8999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/15.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Bowl ideal para ensaladas, pastas y comidas variadas.",
+    "material": "Porcelana cerámica blanca resistente y elegante",
+    "medida": "17cm de Diámetro y 8,5cm de Altura"
   },
     {
     "id": 38,
@@ -431,7 +564,10 @@
     "precio": 3999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/16.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Perfecto para cereales, postres y acompañamientos.",
+    "material": "Fabricado en porcelana cerámica blanca",
+    "medida": "13,5cm de Diámetro y 8cm de Altura"
   },
     {
     "id": 39,
@@ -440,7 +576,10 @@
     "precio": 3899,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/17.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Ideal para snacks, salsas y pequeñas porciones.",
+    "material": "Porcelana cerámica blanca de excelente calidad",
+    "medida": "12cm de Diámetro y 6cm de Altura"
   },
     {
     "id": 40,
@@ -449,7 +588,10 @@
     "precio": 4250,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/18.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Cazuela práctica ideal para sopas, guarniciones y entradas.",
+    "material": "Fabricada en porcelana cerámica blanca resistente",
+    "medida": "14cm de Diámetro y 5cm de Altura"
   },
     {
     "id": 41,
@@ -458,7 +600,10 @@
     "precio": 3900,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/19.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Ideal para porciones individuales y presentaciones.",
+    "material": "Porcelana cerámica blanca de alta calidad",
+    "medida": "12cm de Diámetro y 4,5cm de Altura"
   },
     {
     "id": 42,
@@ -467,7 +612,10 @@
     "precio": 2250,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/20.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Perfecta para salsas, dips y pequeñas preparaciones.",
+    "material": "Fabricada en porcelana cerámica blanca",
+    "medida": "10cm de Diámetro y 3,5cm de Altura"
   },
     {
     "id": 43,
@@ -476,7 +624,10 @@
     "precio": 1650,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/21.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Cazuela compacta ideal para salsas y degustaciones.",
+    "material": "Porcelana cerámica blanca resistente",
+    "medida": "8cm de Diámetro y 3cm de Altura"
   },
     {
     "id": 44,
@@ -485,7 +636,10 @@
     "precio": 1490,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/22.png",
-    "paso": 2
+    "paso": 2,
+    "descripcion": "Ideal para dips, condimentos y pequeñas presentaciones.",
+    "material": "Fabricada en porcelana cerámica blanca de excelente terminación",
+    "medida": "7cm de Diámetro y 3cm de Altura"
   }
   ,
     {
@@ -495,7 +649,10 @@
     "precio": 4499,
     "unidad": "BULTO X 10",
     "img": "img/vajilla/44.jpg",
-    "paso": 10
+    "paso": 10,
+    "descripcion": "Jarrito clásico ideal para café, cortados y bebidas calientes.",
+    "material": "Porcelana resistente con plato incluido",
+    "medida": "150ml de Capacidad"
   },
     {
     "id": 46,
@@ -504,7 +661,10 @@
     "precio": 4399,
     "unidad": "BULTO X 10",
     "img": "img/vajilla/48.jpg",
-    "paso": 10
+    "paso": 10,
+    "descripcion": "Taza elegante ideal para espresso y café corto.",
+    "material": "Fabricada en porcelana con plato incluido",
+    "medida": "90ml de Capacidad"
   },
     {
     "id": 47,
@@ -513,6 +673,9 @@
     "precio": 5399,
     "unidad": "BULTO X 12",
     "img": "img/vajilla/42.jpg",
-    "paso": 12
+    "paso": 12,
+    "descripcion": "Perfecta para desayunos, café con leche y té.",
+    "material": "Porcelana resistente con plato incluido",
+    "medida": "240ml de Capacidad"
   }
 ]
