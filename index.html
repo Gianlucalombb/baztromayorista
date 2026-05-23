@@ -3,10 +3,38 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Baztro Mayorista</title>
+  <title>Baztro Mayorista — Vajilla & Mesa Gastronómica</title>
+  <meta name="description" content="Catálogo mayorista de vajilla, cristalería, cubiertos y accesorios gastronómicos. Los mejores precios para tu negocio. Envíos a todo el país.">
+<meta name="keywords" content="vajilla mayorista, platos porcelana, copas cristal, cubiertos acero inoxidable, gastronomía, mayorista CABA">
+<meta name="robots" content="index, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Bricolage+Grotesque:wght@300;400;600;800&family=Oswald:wght@400;600&family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Open Graph para WhatsApp y redes -->
+<meta property="og:title" content="Baztro Mayorista — Vajilla & Mesa Gastronómica">
+<meta property="og:description" content="Los mejores precios en vajilla, cristalería y cubiertos para tu negocio. Envíos a todo el país.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta name="application-name" content="Baztro Mayorista">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Baztro Mayorista",
+  "alternateName": "baztromayorista",
+  "description": "Vajilla y mesa gastronómica mayorista",
+  "url": "https://baztromayorista.ar",
+  "telephone": "+5491168660232",
+  "address": {
+    "@type": "baztroonline@gmail.com",
+    "addressLocality": "San Cristóbal",
+    "addressRegion": "CABA",
+    "addressCountry": "AR"
+  }
+}
+</script>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="canonical" href="https://baztromayorista.ar/">
   <link rel="icon" type="image/png" href="img/Untitled design (27).png">
 <link rel="apple-touch-icon" href="img/Untitled design (27).png">
 </head>
@@ -77,7 +105,9 @@
         <button class="pill" data-cat="vasos_y_copas">Vasos y Copas</button>
         <button class="pill" data-cat="bowls">Bowls y Cazuelas</button>
         <button class="pill" data-cat="cafeteria">Cafetería</button>
+        <button class="pill" data-cat="fuentes">Fuentes y Bandejas</button>
         <button class="pill" data-cat="combos">Kits y Combos</button>
+        <button class="pill" data-cat="freidoras">Freidoras y Cocinas</button>
       </div>
     </div>
   </section>
@@ -187,6 +217,7 @@
         <div class="modal-badge-wrap" id="modal-badge-wrap"></div>
         <h2 class="modal-nombre" id="modal-nombre"></h2>
         <div class="modal-linea"></div>
+        <div class="modal-variantes" id="modal-variantes"></div>
         <div class="modal-precio-wrap">
           <span class="modal-precio" id="modal-precio"></span>
           <span class="modal-unidad" id="modal-unidad"></span>
@@ -207,17 +238,7 @@
     Todos los medios de pago
   </div>
 </div>
-        <div class="modal-actions">
-          <div class="qty-control">
-            <button class="qty-btn" id="modal-qty-minus">−</button>
-            <input class="qty-input" type="number" id="modal-qty" value="1" min="1">
-            <button class="qty-btn" id="modal-qty-plus">+</button>
-          </div>
-          <button class="add-btn modal-add-btn" id="modal-add-btn">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            Agregar al carrito
-          </button>
-        </div>
+        
       </div>
     </div>
   </div>

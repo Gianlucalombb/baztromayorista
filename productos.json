@@ -111,7 +111,8 @@
     "paso": 12,
     "descripcion": "Perfecto para postres, meriendas y mesas modernas.",
     "material": "Fabricado en porcelana de alta calidad",
-    "medida": "19cm de Diámetro y 2cm de Altura."
+    "medida": "19cm de Diámetro y 2cm de Altura.",
+    "sinStock": true
 
   },
   {
@@ -126,6 +127,7 @@
     "material": "Porcelana resistente para uso diario y gastronómico",
     "medida": "20,5cm de Diámetro"
   },
+
   {
     "id": 5,
     "nombre": "Cuchillo de Carne de Acero Inoxidable",
@@ -546,13 +548,158 @@
     "medida": "1,25L de Capacidad y 21cm de Altura"
   },
     {
+    "id": 73,
+    "nombre": "Plato Playo Oval 30,5cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 4799,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/80.jpg",
+    "paso": 12,
+    "descripcion": "Plato oval ideal para presentaciones elegantes y gastronomía.",
+    "material": "Fabricado en opalina blanca resistente y de excelente terminación",
+    "medida": "30cm de Largo y 25cm de Ancho"
+  },
+  {
+    "id": 74,
+    "nombre": "Plato Playo Oval 27cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 3899,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/81.jpg",
+    "paso": 12,
+    "descripcion": "Plato oval ideal para presentaciones elegantes y gastronomía.",
+    "material": "Fabricado en opalina blanca resistente y de excelente terminación",
+    "medida": "27cm de Diámetro"
+  },
+  {
+    "id": 75,
+    "nombre": "Plato Playo Oval 21,5cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 2999,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/82.jpg",
+    "paso": 12,
+    "descripcion": "Plato oval ideal para presentaciones elegantes y gastronomía.",
+    "material": "Fabricado en opalina blanca resistente y de excelente terminación",
+    "medida": "21,5cm de Diámetro"
+  },  
+  {
+    "id": 76,
+    "nombre": "Plato Hondo Oval 23cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 3299,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/83.jpg",
+    "paso": 12,
+    "descripcion": "Plato hondo oval ideal para pastas, sopas y comidas con salsa.",
+    "material": "Fabricado en opalina blanca resistente y duradera",
+    "medida": "23cm de Diámetro"
+  },
+  
+  {
+    "id": 77,
+    "nombre": "Plato Playo Cuadrado 26cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 4799,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/84.jpg",
+    "paso": 12,
+    "descripcion": "Plato cuadrado ideal para presentaciones modernas y elegantes.",
+    "material": "Fabricado en opalina blanca resistente y de excelente calidad",
+    "medida": "26,5x26,5 y 3cm de Altura"
+  },
+  {
+    "id": 78,
+    "nombre": "Plato Playo Cuadrado 22,5cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 3799,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/85.jpg",
+    "paso": 12,
+    "descripcion": "Plato cuadrado ideal para comidas, entradas y presentaciones modernas.",
+    "material": "Fabricado en opalina blanca resistente y duradera",
+    "medida": "22,5x22,5cm y 2cm de Altura"
+  },
+  {
+    "id": 79,
+    "nombre": "Plato Postre Cuadrado 20cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 3199,
+    "unidad": "BULTO X 12",
+    "img": "img/vajilla/86.jpg",
+    "paso": 8,
+    "descripcion": "Plato cuadrado práctico y elegante para uso diario y gastronomía.",
+    "material": "Fabricado en opalina blanca resistente y duradera",
+    "medida": "20x20cm y 2cm de Altura"
+  },
+  {
+    "id": 81,
+    "nombre": "Ensaladera Cuadrada 24cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 5399,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/88.jpg",
+    "paso": 6,
+    "descripcion": "Ensaladera cuadrada ideal para ensaladas y presentaciones modernas.",
+    "material": "Fabricada en porcelana resistente y de excelente calidad",
+    "medida": "24x24cm y 2cm de Altura"
+  },
+  {
+    "id": 80,
+    "nombre": "Plato Hondo Cuadrado 20cm Opalina Blanca",
+    "categoria": "platos",
+    "precio": 4099,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/89.jpg",
+    "paso": 6,
+    "descripcion": "Plato hondo cuadrado ideal para sopas, pastas y comidas con salsa.",
+    "material": "Fabricado en opalina blanca resistente y de excelente terminación",
+    "medida": "20x20cm y 5,5cm de Altura"
+  },
+  {
+    "id": 81,
+    "nombre": "Ensaladera Porcelana 25cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 8499,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/90.jpg",
+    "paso": 6,
+    "descripcion": "Ensaladera ideal para ensaladas, pastas y presentaciones.",
+    "material": "Fabricada en porcelana blanca resistente y elegante",
+    "medida": "25cm de Diámetro"
+  },
+  {
+    "id": 82,
+    "nombre": "Ensaladera Porcelana 20cm Porcelana Blanca",
+    "categoria": "platos",
+    "precio": 5999,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/91.jpg",
+    "paso": 6,
+    "descripcion": "Ensaladera práctica y elegante ideal para ensaladas y acompañamientos.",
+    "material": "Fabricada en porcelana blanca resistente y de excelente calidad",
+    "medida": "20cm de Diámetro"
+  },
+  {
+    "id": 83,
+    "nombre": "Compotera Porcelana 15cm Porcelana Blanca",
+    "categoria": ["platos", "bowls"],
+    "precio": 2799,
+    "unidad": "BULTO X 6",
+    "img": "img/vajilla/92.jpg",
+    "paso": 10,
+    "descripcion": "Compotera ideal para postres, frutas y pequeñas presentaciones.",
+    "material": "Fabricada en porcelana blanca resistente y elegante",
+    "medida": "15cm de Diámetro"
+  },
+  {
     "id": 37,
     "nombre": "Bowl 17cm de Porcelana Ceramica Blanca",
     "categoria": "bowls",
     "precio": 8999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/15.png",
-    "paso": 2,
+    "paso": 3,
     "descripcion": "Bowl ideal para ensaladas, pastas y comidas variadas.",
     "material": "Porcelana cerámica blanca resistente y elegante",
     "medida": "17cm de Diámetro y 8,5cm de Altura"
@@ -564,7 +711,7 @@
     "precio": 3999,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/16.png",
-    "paso": 2,
+    "paso": 6,
     "descripcion": "Perfecto para cereales, postres y acompañamientos.",
     "material": "Fabricado en porcelana cerámica blanca",
     "medida": "13,5cm de Diámetro y 8cm de Altura"
@@ -576,7 +723,7 @@
     "precio": 3899,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/17.png",
-    "paso": 2,
+    "paso": 6,
     "descripcion": "Ideal para snacks, salsas y pequeñas porciones.",
     "material": "Porcelana cerámica blanca de excelente calidad",
     "medida": "12cm de Diámetro y 6cm de Altura"
@@ -588,7 +735,7 @@
     "precio": 4250,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/18.png",
-    "paso": 2,
+    "paso": 3,
     "descripcion": "Cazuela práctica ideal para sopas, guarniciones y entradas.",
     "material": "Fabricada en porcelana cerámica blanca resistente",
     "medida": "14cm de Diámetro y 5cm de Altura"
@@ -600,7 +747,7 @@
     "precio": 3900,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/19.png",
-    "paso": 2,
+    "paso": 3,
     "descripcion": "Ideal para porciones individuales y presentaciones.",
     "material": "Porcelana cerámica blanca de alta calidad",
     "medida": "12cm de Diámetro y 4,5cm de Altura"
@@ -612,7 +759,7 @@
     "precio": 2250,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/20.png",
-    "paso": 2,
+    "paso": 6,
     "descripcion": "Perfecta para salsas, dips y pequeñas preparaciones.",
     "material": "Fabricada en porcelana cerámica blanca",
     "medida": "10cm de Diámetro y 3,5cm de Altura"
@@ -624,7 +771,7 @@
     "precio": 1650,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/21.png",
-    "paso": 2,
+    "paso": 6,
     "descripcion": "Cazuela compacta ideal para salsas y degustaciones.",
     "material": "Porcelana cerámica blanca resistente",
     "medida": "8cm de Diámetro y 3cm de Altura"
@@ -636,10 +783,22 @@
     "precio": 1490,
     "unidad": "VENTA POR UNIDAD",
     "img": "img/vajilla/22.png",
-    "paso": 2,
+    "paso": 6,
     "descripcion": "Ideal para dips, condimentos y pequeñas presentaciones.",
     "material": "Fabricada en porcelana cerámica blanca de excelente terminación",
     "medida": "7cm de Diámetro y 3cm de Altura"
+  },
+    {
+    "id": 73,
+    "nombre": "Cocota 6cm de Porcelana Ceramica Blanca",
+    "categoria": "bowls",
+    "precio": 1490,
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/79.jpg",
+    "paso": 6,
+    "descripcion": "Cocota ideal para salsas, dips y pequeñas presentaciones.",
+    "material": "Fabricada en porcelana cerámica resistente",
+    "medida": "6cm de Diámetro y 2,5cm de Altura"
   }
   ,
     {
@@ -677,5 +836,285 @@
     "descripcion": "Perfecta para desayunos, café con leche y té.",
     "material": "Porcelana resistente con plato incluido",
     "medida": "240ml de Capacidad"
+  },
+  {
+        "id": 55,
+    "nombre": "Bandeja Mozo Antideslizante - 40 / 45 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/63.jpg",
+    "paso": 1,
+    "descripcion": "Bandeja antideslizante ideal para gastronomía, eventos y servicio de mesas.",
+    "material": "Fabricada en plástico resistente con superficie antideslizante",
+    "medida": "Opciones disponibles: 40 cm y 45 cm",
+    "variantes": [
+    { "medida": "40", "precio": 10000 },
+    { "medida": "45", "precio": 13000 }
+  ],
+    "precio": 10000
+  },
+  {
+        "id": 56,
+    "nombre": "Bandeja Doble - 20x28 / 23x33 / 28x38 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/64.jpg",
+    "paso": 1,
+    "descripcion": "Bandeja práctica y elegante ideal para servir comidas y presentaciones.",
+    "material": "Fabricada en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 20x28 cm, 23x33 cm y 28x38 cm",
+    "variantes": [
+    { "medida": "20x28", "precio": 6818 },
+    { "medida": "23x33", "precio": 9439 },
+    { "medida": "28x38", "precio": 13527 }
+  ],
+    "precio": 6818
+  },
+  {
+        "id": 57,
+    "nombre": "Bandeja de Mozo Acero Inoxidable - 42 / 45 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/65.jpg",
+    "paso": 1,
+    "descripcion": "Bandeja ideal para gastronomía, eventos y servicio profesional.",
+    "material": "Fabricada en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 42 cm y 45 cm",
+    "variantes": [
+    { "medida": "42", "precio": 18375 },
+    { "medida": "45", "precio": 18822 }
+  ],
+    "precio": 18375
+  },
+  {
+        "id": 58,
+    "nombre": "Asadera Acero Inoxidable - 20x16 / 29x19 / 33x23 / 38x28 / 44x34 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/66.jpg",
+    "paso": 1,
+    "descripcion": "Asadera práctica y resistente ideal para horno y presentaciones.",
+    "material": "Fabricada en acero inoxidable de excelente calidad",
+    "medida": "Opciones disponibles: 20x16 cm, 29x19 cm, 33x23 cm, 38x28 cm y 44x34 cm",
+    "variantes": [
+    { "medida": "20x16", "precio": 5889 },
+    { "medida": "29x19", "precio": 8180 },
+    { "medida": "33x23", "precio": 10960 },
+    { "medida": "38x28", "precio": 14738 },
+    { "medida": "44x34", "precio": 25353 }
+  ],
+    "precio": 5889
+  },
+  {
+        "id": 59,
+    "nombre": "Legumbrera Oval Acero Inoxidable - Todos los Tamaños Disponibles",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/67.jpg",
+    "paso": 1,
+    "descripcion": "Legumbrera oval ideal para servir comidas, guarniciones y presentaciones.",
+    "material": "Fabricada en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 19, 21, 24, 27, 29, 33, 38, 42 y 54 cm",
+    "variantes": [
+    { "medida": "19", "precio": 4222 },
+    { "medida": "21", "precio": 5448 },
+    { "medida": "24", "precio": 6479 },    
+    { "medida": "27", "precio": 8187 },
+    { "medida": "29", "precio": 8557 },
+    { "medida": "33", "precio": 10351 },    
+    { "medida": "38", "precio": 14097 },
+    { "medida": "42", "precio": 17435 },
+    { "medida": "54", "precio": 32944 }
+  ],
+    "precio": 4222
+  },
+  {
+        "id": 60,
+    "nombre": "Ensaladera Acero Inoxidable - 16 / 18 / 20 / 22 / 24 cm",
+    "categoria": ["fuentes", "bowls" ],
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/68.jpg",
+    "paso": 1,
+    "descripcion": "Ensaladera práctica y elegante ideal para ensaladas y presentaciones.",
+    "material": "Fabricada en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 16 cm, 18 cm, 20 cm, 22 cm y 24 cm",
+    "variantes": [
+    { "medida": "16", "precio": 3730 },
+    { "medida": "18", "precio": 4782 },
+    { "medida": "20", "precio": 5538 },
+    { "medida": "22", "precio": 7235 },
+    { "medida": "24", "precio": 9189 }
+  ],
+    "precio": 3730
+  },
+  {
+        "id": 63,
+    "nombre": "Fuente Oval Acero Inoxidable - Todos los Tamaños Disponibles",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/69.jpg",
+    "paso": 1,
+    "descripcion": "Fuente oval ideal para servir comidas, carnes y presentaciones.",
+    "material": "Fabricada en acero inoxidable resistente y de excelente calidad",
+    "medida": "Opciones disponibles: 21 cm, 23 cm, 26 cm, 29 cm, 33 cm, 35 cm, 38 cm, 42 cm, 46 cm, 53 cm y 58 cm",
+    "variantes": [
+    { "medida": "21", "precio": 3454 },
+    { "medida": "23", "precio": 4221 },
+    { "medida": "26", "precio": 5030 },
+    { "medida": "29", "precio": 6063 },    
+    { "medida": "33", "precio": 8519 },
+    { "medida": "35", "precio": 9573 },
+    { "medida": "38", "precio": 11588 },
+    { "medida": "42", "precio": 14614 },
+    { "medida": "46", "precio": 17638 },
+    { "medida": "53", "precio": 27089 },
+    { "medida": "58 (Pescado) ", "precio": 19069 }
+  ],
+    "precio": 3454
+  },
+  {
+        "id": 64,
+    "nombre": "Fuentón Acero Inoxidable - 29x19 / 33x23 / 38x28 / 44x34 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/70.jpg",
+    "paso": 1,
+    "descripcion": "Fuentón ideal para servir comidas, eventos y grandes presentaciones.",
+    "material": "Fabricado en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 29x19 cm, 33x23 cm, 38x28 cm y 44x34 cm",
+    "variantes": [
+    { "medida": "29x19", "precio": 9504 },
+    { "medida": "33x23", "precio": 13248 },
+    { "medida": "38x28", "precio": 17751 },
+    { "medida": "44x34", "precio": 30373 }
+  ],
+    "precio": 9504
+  },
+  {
+        "id": 65,
+    "nombre": "Bandeja Pizzera Acero Inoxidable - 25 / 29 / 35 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/71.jpg",
+    "paso": 1,
+    "descripcion": "Bandeja pizzera ideal para pizzas, tartas y presentaciones.",
+    "material": "Fabricada en acero inoxidable resistente y fácil de limpiar",
+    "medida": "Opciones disponibles: 25 cm, 29 cm y 35 cm",
+    "variantes": [
+    { "medida": "25", "precio": 6314 },
+    { "medida": "29", "precio": 7911 },
+    { "medida": "35", "precio": 10806 }
+  ],
+    "precio": 6314
+  },
+  {
+        "id": 66,
+    "nombre": "Balde de Hielo Acero Inoxidable 10 / 12 / 18 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/72.jpg",
+    "paso": 1,
+    "descripcion": "Balde de hielo ideal para mantener bebidas frías en reuniones y eventos.",
+    "material": "Fabricado en acero inoxidable resistente y duradero",
+    "medida": "Opciones disponibles: 10 cm, 12 cm y 18 cm",
+    "variantes": [
+    { "medida": "10", "precio": 6413 },
+    { "medida": "12", "precio": 6936 },
+    { "medida": "18 (Champagne)", "precio": 13574 }
+  ],
+    "precio": 6413
+  },
+  {
+        "id": 67,
+    "nombre": "Dips Salsas Acero Inoxidable - 6x3,5 / 7x3,5 cm",
+    "categoria": "fuentes",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/73.jpg",
+    "paso": 1,
+    "descripcion": "Dip ideal para salsas, aderezos y pequeñas presentaciones.",
+    "material": "Fabricado en acero inoxidable resistente y práctico",
+    "medida": "Opciones disponibles: 6x3,5 cm y 7x3,5 cm",
+    "variantes": [
+    { "medida": "6x3,5", "precio": 2466 },
+    { "medida": "7x3,5", "precio": 2760 }
+  ],
+    "precio": 2466
+  },
+  {
+        "id": 68,
+    "nombre": "Freidora Electrica Simple YAC - 8L",
+    "categoria": "freidoras",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/74.jpg",
+    "paso": 1,
+    "descripcion": "Freidora eléctrica ideal para gastronomía, locales y uso intensivo.",
+    "material": "Fabricada en acero inoxidable AISI 304 con recipiente desmontable",
+    "medida": "Capacidad de aceite 8 Lts | Medidas: 52x25x34 cm",
+    "sinPromo": true,
+    "precio": 260000
+  },
+  {
+        "id": 69,
+    "nombre": "Freidora Electrica Doble YAC - 16L",
+    "categoria": "freidoras",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/75.jpg",
+    "paso": 1,
+    "descripcion": "Freidora eléctrica doble ideal para gastronomía, locales y uso intensivo.",
+    "material": "Construcción completa en acero inoxidable con 2 cubas desmontables AISI 304",
+    "medida": "Capacidad total 16 Lts | Medidas: 52x25x34 cm",
+    "sinPromo": true,
+    "precio": 520000
+  },
+  {
+        "id": 70,
+    "nombre": "Freidora Automatica a Gas YAC - 35L",
+    "categoria": "freidoras",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/76.jpg",
+    "paso": 1,
+    "descripcion": "Freidora automática de alta producción ideal para gastronomía y trabajo intensivo.",
+    "material": "Construcción completa en acero inoxidable AISI 304 con sistema agua/aceite",
+    "medida": "Capacidad total 35 Lts | Medidas: 43x75x105 cm",
+    "variantes": [
+    { "medida": "GAS NATURAL", "precio": 2000000 },
+    { "medida": "GAS ENVASADO", "precio": 2000000 }
+  ],
+    "sinPromo": true,
+    "precio": 2000000
+  },
+  {
+        "id": 71,
+    "nombre": "Cuccipasta a Gas 4 Canastos YAC - 35L",
+    "categoria": "freidoras",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/77.jpg",
+    "paso": 1,
+    "descripcion": "Cuccipasta profesional ideal para restaurantes, bares y cocinas de alta demanda.",
+    "material": "Construcción completa en acero inoxidable con 4 canastos reforzados incluidos",
+    "medida": "Capacidad total 35 Lts | Medidas: 43x75x105 cm",
+    "variantes": [
+    { "medida": "GAS NATURAL", "precio": 2500000 },
+    { "medida": "GAS ENVASADO", "precio": 2500000 }
+  ],
+    "sinPromo": true,
+    "precio": 2500000
+  },
+  {
+        "id": 72,
+    "nombre": "Plancha Hamburguesera a Gas YAC",
+    "categoria": "freidoras",
+    "unidad": "VENTA POR UNIDAD",
+    "img": "img/vajilla/78.jpg",
+    "paso": 1,
+    "descripcion": "Plancha hamburguesera profesional ideal para gastronomía y alto rendimiento.",
+    "material": "Fabricada en acero inoxidable AISI 430 con plancha de hierro de 8 mm",
+    "medida": "Medidas: 75x75x85 cm | Funcionamiento a gas",
+    "variantes": [
+    { "medida": "GAS NATURAL", "precio": 1250000 },
+    { "medida": "GAS ENVASADO", "precio": 1250000 }
+  ],
+    "sinPromo": true,
+    "precio": 1250000
   }
 ]

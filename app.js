@@ -15,7 +15,7 @@ const CAT_COLORS = {
 let productos = [];
 let catActiva = "todos";
 let busqueda  = "";
-let carrito   = {}; // { id: { producto, cantidad } }
+let carrito = JSON.parse(localStorage.getItem("carrito") || "{}");
 
 const isV2 = true;
 
@@ -61,16 +61,27 @@ function mostrarNotifDescuento(pct) {
 }
 
 // ── CARRITO ───────────────────────────────────────────────────
-function agregarAlCarrito(id, cantidad) {
+function agregarAlCarrito(id, cantidad, precioOverride, medidaOverride) {
   const p = productos.find(x => x.id === id);
   if (!p || cantidad < 1) return;
-carrito[id] = { producto: p, cantidad };
+  const precio = precioOverride || p.precio;
+  const key = medidaOverride ? `${id}-${medidaOverride}` : String(id);
+  carrito[key] = {
+    producto: {
+      ...p,
+      precio,
+      nombre: medidaOverride ? `${p.nombre} (${medidaOverride})` : p.nombre
+    },
+    cantidad
+  };
   renderCarrito();
+  
 }
 
-function quitarDelCarrito(id) {
-  delete carrito[id];
+function quitarDelCarrito(key) {
+  delete carrito[key];
   renderCarrito();
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 function totalCarrito() {
@@ -95,6 +106,18 @@ function calcularDescuento(total) {
   if (total >= 500000)  return { pct: 5, siguiente: 1000000, falta: 1000000 - total };
   return { pct: 0, siguiente: 500000, falta: 500000 - total };
 }
+  function cambiarCantidadBtn(btn) {
+  const key = btn.dataset.key;
+  const nuevaCantidad = +btn.dataset.cant;
+  const paso = +btn.dataset.paso;
+  if (!carrito[key]) return;
+  if (nuevaCantidad < paso) {
+    quitarDelCarrito(key);
+    return;
+  }
+  carrito[key].cantidad = nuevaCantidad;
+  renderCarrito();
+}
 
 function renderCarrito() {
   const bar     = document.getElementById("carrito-bar");
@@ -105,28 +128,38 @@ function renderCarrito() {
   const items   = Object.values(carrito);
 
   if (badge) {
-  badge.textContent = cantidadItems();
-  badge.classList.remove("bump");
-  void badge.offsetWidth;
-  badge.classList.add("bump");
-}
+    badge.textContent = cantidadItems();
+    badge.classList.remove("bump");
+    void badge.offsetWidth;
+    badge.classList.add("bump");
+  }
 
   if (items.length === 0) {
     bar.classList.remove("visible");
+    renderCarrito._prevPct = 0;
     return;
   }
 
   bar.classList.add("visible");
 
-lista.innerHTML = items.map(({ producto: p, cantidad }) => `
-    <div class="carrito-item">
-      <span class="ci-nombre">${p.nombre}</span>
-      <span class="ci-cant">x${cantidad}</span>
-      <span class="ci-precio">${formatPrecio(p.precio * cantidad)}</span>
-      <button class="ci-remove" onclick="quitarDelCarrito(${p.id})">✕</button>
-    </div>
-    ${p.sinPromo ? `<div class="ci-sinpromo">⚠ No aplica a la promoción</div>` : ""}
-  `).join("");
+lista.innerHTML = items.map(({ producto: p, cantidad }, i) => {
+    const key = Object.keys(carrito)[i];
+    const paso = p.paso || 1;
+    return `
+      <div class="carrito-item">
+        <span class="ci-nombre">${p.nombre}</span>
+        <div class="ci-qty-control">
+          <button class="ci-qty-btn" data-key="${key}" data-cant="${cantidad - paso}" data-paso="${paso}" onclick="cambiarCantidadBtn(this)">−</button>
+<span class="ci-cant">${cantidad}</span>
+<button class="ci-qty-btn" data-key="${key}" data-cant="${cantidad + paso}" data-paso="${paso}" onclick="cambiarCantidadBtn(this)">+</button>
+        </div>
+        <span class="ci-precio">${formatPrecio(p.precio * cantidad)}</span>
+        <button class="ci-remove" onclick="quitarDelCarrito('${key}')">✕</button>
+      </div>
+      ${p.sinPromo ? `<div class="ci-sinpromo">⚠ No aplica a la promoción</div>` : ""}
+    `;
+  }).join("");
+
 
   const total = totalCarrito();
   const desc  = calcularDescuento(totalConPromo());
@@ -141,8 +174,8 @@ lista.innerHTML = items.map(({ producto: p, cantidad }) => `
   if (wrap) {
     if (desc.siguiente) {
       const progreso = desc.pct === 0
-        ? (total / 500000) * 100
-        : ((total - 500000) / 500000) * 100;
+        ? (totalConPromo() / 500000) * 100
+        : ((totalConPromo() - 500000) / 500000) * 100;
       const labelMeta = desc.pct === 0 ? "5% de descuento" : "10% de descuento";
       wrap.innerHTML = `
         <div class="desc-info">
@@ -175,6 +208,8 @@ lista.innerHTML = items.map(({ producto: p, cantidad }) => `
   ahorroEl.textContent = desc.pct > 0
     ? `Ahorrás ${formatPrecio(ahorro)} (${desc.pct}% off)`
     : "";
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
 function enviarPorWpp() {
@@ -182,7 +217,7 @@ function enviarPorWpp() {
   if (items.length === 0) return;
 
   const total = totalCarrito();
-  const desc  = calcularDescuento(total);
+  const desc  = calcularDescuento(totalConPromo());
   const totalConDesc = desc.pct > 0 ? total * (1 - desc.pct / 100) : total;
   const ahorro = total - totalConDesc;
 
@@ -205,11 +240,43 @@ function abrirModal(id) {
   productoModal = p;
 
   const paso = p.paso || 1;
+  let varActiva = p.variantes && p.variantes.length ? p.variantes[0] : null;
 
   document.getElementById("modal-nombre").textContent = p.nombre;
-  document.getElementById("modal-precio").textContent = formatPrecio(p.precio);
   document.getElementById("modal-unidad").textContent = p.unidad;
   document.getElementById("modal-desc").textContent = p.descripcion || "";
+
+  // precio inicial
+  document.getElementById("modal-precio").textContent = formatPrecio(varActiva ? varActiva.precio : p.precio);
+
+  // variantes
+  const varWrap = document.getElementById("modal-variantes");
+  varWrap.innerHTML = "";
+  if (p.variantes && p.variantes.length) {
+    p.variantes.forEach((v, i) => {
+      const btn = document.createElement("button");
+      btn.className = "var-btn" + (i === 0 ? " activa" : "");
+      btn.textContent = v.medida;
+      btn.onclick = () => {
+        varActiva = v;
+        document.getElementById("modal-precio").textContent = formatPrecio(v.precio);
+        document.querySelectorAll(".var-btn").forEach(b => b.classList.remove("activa"));
+        btn.classList.add("activa");
+
+        // actualizar precio y medida en la card
+        const card = document.querySelector(`.card[data-id="${p.id}"]`);
+        if (card) {
+          card.querySelector(".price-num").textContent = formatPrecio(v.precio);
+          const addBtn = card.querySelector(".add-btn");
+          if (addBtn) {
+            addBtn.dataset.precio = v.precio;
+            addBtn.dataset.medida = v.medida;
+          }
+        }
+      };
+      varWrap.appendChild(btn);
+    });
+  }
 
   // badge
   const badgeMap = { "más vendido": "mas-vendido", "oferta": "oferta", "nuevo": "nuevo", "últimos": "ultimos" };
@@ -245,30 +312,7 @@ function abrirModal(id) {
     });
   }
 
-  // qty
-  const qtyInput = document.getElementById("modal-qty");
-  qtyInput.value = paso;
-  qtyInput.min = paso;
-  qtyInput.step = paso;
 
-  document.getElementById("modal-qty-minus").onclick = () => {
-    qtyInput.value = Math.max(paso, +qtyInput.value - paso);
-  };
-  document.getElementById("modal-qty-plus").onclick = () => {
-    qtyInput.value = Math.min(9999, +qtyInput.value + paso);
-  };
-
-  // botón agregar
-  const addBtn = document.getElementById("modal-add-btn");
-  addBtn.onclick = () => {
-    agregarAlCarrito(p.id, +qtyInput.value);
-    addBtn.innerHTML = "✓ Agregado";
-    addBtn.classList.add("added");
-    setTimeout(() => {
-      addBtn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Agregar al carrito`;
-      addBtn.classList.remove("added");
-    }, 1500);
-  };
 
   document.getElementById("modal-overlay").classList.add("open");
   document.body.style.overflow = "hidden";
@@ -288,6 +332,7 @@ function buildCardV2(p, i) {
   const colors = CAT_COLORS[p.categoria] || { bar: "#8B5CF6", label: "#8B5CF6" };
   const card = document.createElement("div");
   card.className = "card";
+  card.dataset.id = p.id;
 
   
   const imgTag = p.img
@@ -314,7 +359,10 @@ const qtyHtml = `
 
 card.innerHTML = `
   <div class="card-topbar" style="background:${colors.bar}"></div>
-  <div class="card-photo ${p.img ? "" : "img-error"}" data-fallback="${p.emoji || "🍽️"}" onclick="abrirModal(${p.id})" style="cursor:pointer">${badgeHtml}${imgTag}</div>
+  <div class="card-photo ${p.img ? "" : "img-error"}" data-fallback="${p.emoji || "🍽️"}" onclick="abrirModal(${p.id})" style="cursor:pointer">
+  ${badgeHtml}${imgTag}
+  <div class="card-photo-hint">Ver más Info</div>
+</div>
   <div class="card-inner">
     <div class="card-name">${p.nombre}</div>
     <div class="card-bottom">
@@ -325,16 +373,20 @@ card.innerHTML = `
         </div>
         ${qtyHtml}
       </div>
-      <button class="add-btn" onclick="
-      const input = this.closest('.card-bottom').querySelector('.qty-input');
-      agregarAlCarrito(${p.id}, input ? +input.value : 1);
-        this.innerHTML = '✓ Agregado';
-        this.classList.add('added');
-        setTimeout(() => { this.innerHTML = '<svg width=\\'15\\' height=\\'15\\' viewBox=\\'0 0 24 24\\' fill=\\'none\\' stroke=\\'currentColor\\' stroke-width=\\'2.5\\'><circle cx=\\'9\\' cy=\\'21\\' r=\\'1\\'/><circle cx=\\'20\\' cy=\\'21\\' r=\\'1\\'/><path d=\\'M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\\'/></svg> Agregar'; this.classList.remove('added'); }, 1500);
-      ">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        Agregar
-      </button>
+<button class="add-btn ${p.sinStock ? 'sin-stock' : ''}" 
+  ${p.sinStock ? 'disabled' : `onclick="
+    const input = this.closest('.card-bottom').querySelector('.qty-input');
+    const precio = +this.dataset.precio || ${p.precio};
+    const medida = this.dataset.medida || null;
+    agregarAlCarrito(${p.id}, input ? +input.value : 1, precio, medida);
+    const original = this.innerHTML;
+    this.innerHTML = '✓ Agregado';
+    this.classList.add('added');
+    setTimeout(() => { this.innerHTML = original; this.classList.remove('added'); }, 1500);
+  "`}>
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+  ${p.sinStock ? 'Sin stock' : 'Agregar'}
+</button>
     </div>
   </div>
 `;
@@ -347,20 +399,41 @@ function renderCards(lista) {
   const empty = document.getElementById("empty");
   const label = document.getElementById("count-label");
   grid.innerHTML = "";
+
   if (lista.length === 0) {
     empty.style.display = "block";
     if (label) label.textContent = "";
     return;
   }
+
   empty.style.display = "none";
   if (label) label.textContent = `${lista.length} producto${lista.length !== 1 ? "s" : ""}`;
-  lista.forEach((p, i) => grid.appendChild(buildCardV2(p, i)));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: "100px" });
+
+  lista.forEach((p, i) => {
+    const card = buildCardV2(p, i);
+    card.classList.add("card-hidden");
+    grid.appendChild(card);
+    observer.observe(card);
+  });
 }
 
 // ── FILTRAR ──────────────────────────────────────────────────
 function filtrar() {
   let lista = productos;
-  if (catActiva !== "todos") lista = lista.filter(p => p.categoria === catActiva);
+  if (catActiva !== "todos") lista = lista.filter(p => 
+  Array.isArray(p.categoria) 
+    ? p.categoria.includes(catActiva) 
+    : p.categoria === catActiva
+);
   if (busqueda.trim()) {
     const q = busqueda.toLowerCase();
     lista = lista.filter(p => p.nombre.toLowerCase().includes(q));
