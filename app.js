@@ -194,8 +194,12 @@ lista.innerHTML = items.map(({ producto: p, cantidad }, i) => {
     }
   }
 
-  const totalConDesc = desc.pct > 0 ? total * (1 - desc.pct / 100) : total;
-  const ahorro = total - totalConDesc;
+  const basePromo = totalConPromo();
+const baseNoPromo = total - basePromo;
+const totalConDesc = desc.pct > 0 
+  ? baseNoPromo + basePromo * (1 - desc.pct / 100) 
+  : total;
+const ahorro = total - totalConDesc;
   if (totalEl) totalEl.textContent = formatPrecio(totalConDesc);
 
   let ahorroEl = document.getElementById("carrito-ahorro");
@@ -218,17 +222,25 @@ function enviarPorWpp() {
 
   const total = totalCarrito();
   const desc  = calcularDescuento(totalConPromo());
-  const totalConDesc = desc.pct > 0 ? total * (1 - desc.pct / 100) : total;
+  const basePromo = totalConPromo();
+  const baseNoPromo = total - basePromo;
+  const totalConDesc = desc.pct > 0
+    ? baseNoPromo + basePromo * (1 - desc.pct / 100)
+    : total;
   const ahorro = total - totalConDesc;
 
   const lineas = items.map(({ producto: p, cantidad }) =>
     `• ${p.nombre} (${p.unidad}) x${cantidad} = ${formatPrecio(p.precio * cantidad)}`
   ).join("\n");
 
+  const envioTxt = tipoEnvio === "retiro"
+    ? "📍 *Retiro en local:* San Cristóbal, CABA"
+    : "🚚 *Envío a domicilio*";
+
   const descTxt = desc.pct > 0
     ? `\n🎉 Descuento ${desc.pct}% aplicado: -${formatPrecio(ahorro)}`
     : "";
-  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}${descTxt}\n\n*Total: ${formatPrecio(totalConDesc)}*\n\n¿Tienen todo disponible?`;
+  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}${descTxt}\n\n*Total: ${formatPrecio(totalConDesc)}*\n\n${envioTxt}\n\n¿Tienen todo disponible?`;
   window.open(`https://wa.me/${WPP_NUMERO}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 // ── MODAL ─────────────────────────────────────────────────────
