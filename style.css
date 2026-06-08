@@ -1761,4 +1761,28 @@ footer {
   .qs-stats {
     grid-template-columns: 1fr 1fr;
   }
+
+  #header-cat .header-inner {
+  gap: .5rem;
+}
+
+#header-cat .wpp-pill span {
+  display: none;
+}
+
+#header-cat .wpp-pill {
+  padding: .5rem .7rem;
+}
+
+#header-cat .cat-page-titulo {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+}
+
+#page-categoria {
+  -webkit-overflow-scrolling: touch;
 }

@@ -71,6 +71,10 @@ let catActiva = "todos";
 let busqueda  = "";
 let carrito = JSON.parse(localStorage.getItem("carrito") || "{}");
 
+// limpiar items inválidos del localStorage
+Object.keys(carrito).forEach(key => {
+  if (!carrito[key] || !carrito[key].producto) delete carrito[key];
+});
 const isV2 = true;
 
 // ── UTILS ────────────────────────────────────────────────────
