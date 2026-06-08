@@ -1,5 +1,5 @@
 [{
-    "id": 48,
+    "id": 100,
     "nombre": "Combo 1 - 12 Personas",
     "categoria": "combos",
     "precio": 102000,
@@ -12,7 +12,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
   {
-    "id": 73,
+    "id": 101,
     "nombre": "Combo 1 - 24 Personas",
     "categoria": "combos",
     "precio": 205000,
@@ -25,7 +25,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
   {
-    "id": 74,
+    "id": 102,
     "nombre": "Combo 1 - 48 Personas",
     "categoria": "combos",
     "precio": 395000,
@@ -38,7 +38,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
   {
-    "id": 75,
+    "id": 103,
     "nombre": "Combo 1 - 72 Personas",
     "categoria": "combos",
     "precio": 569000,
@@ -51,7 +51,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
   {
-    "id": 82,
+    "id": 104,
     "nombre": "Combo 1 - 96 Personas",
     "categoria": "combos",
     "precio": 790000,
@@ -64,7 +64,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
   {
-    "id": 76,
+    "id": 105,
     "nombre": "Combo 1 - 144 Personas",
     "categoria": "combos",
     "precio": 1140000,
@@ -77,7 +77,7 @@
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
     {
-    "id": 50,
+    "id": 106,
     "nombre": "Combo 2 - 12 Personas",
     "categoria": "combos",
     "precio": 83820,
@@ -90,7 +90,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
   {
-    "id": 77,
+    "id": 107,
     "nombre": "Combo 2 - 24 Personas",
     "categoria": "combos",
     "precio": 165000,
@@ -103,7 +103,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
   {
-    "id": 78,
+    "id": 108,
     "nombre": "Combo 2 - 48 Personas",
     "categoria": "combos",
     "precio": 325000,
@@ -116,7 +116,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
   {
-    "id": 79,
+    "id": 109,
     "nombre": "Combo 2 - 72 Personas",
     "categoria": "combos",
     "precio": 479999,
@@ -129,7 +129,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
   {
-    "id": 80,
+    "id": 110,
     "nombre": "Combo 2 - 96 Personas",
     "categoria": "combos",
     "precio": 638000,
@@ -142,7 +142,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
   {
-    "id": 81,
+    "id": 111,
     "nombre": "Combo 2 - 144 Personas",
     "categoria": "combos",
     "precio": 935430,
@@ -155,7 +155,7 @@
     "medida": "Ideal para eventos, catering y uso intensivo"
   },
     {
-    "id": 51,
+    "id": 112,
     "nombre": "Combo 3 - 12 Personas ",
     "categoria": "combos",
     "precio": 155796,
@@ -168,7 +168,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 83,
+    "id": 113,
     "nombre": "Combo 3 - 24 Personas ",
     "categoria": "combos",
     "precio": 308000,
@@ -181,7 +181,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 84,
+    "id": 114,
     "nombre": "Combo 3 - 48 Personas ",
     "categoria": "combos",
     "precio": 616694,
@@ -194,7 +194,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 85,
+    "id": 115,
     "nombre": "Combo 3 - 72 Personas ",
     "categoria": "combos",
     "precio": 886000,
@@ -207,7 +207,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 86,
+    "id": 116,
     "nombre": "Combo 3 - 96 Personas ",
     "categoria": "combos",
     "precio": 1168473,
@@ -220,7 +220,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 87,
+    "id": 117,
     "nombre": "Combo 3 - 144 Personas ",
     "categoria": "combos",
     "precio": 1714761,
@@ -233,7 +233,7 @@
     "medida": "Diseño resistente y práctico para alto uso"
   },
   {
-    "id": 54,
+    "id": 118,
     "nombre": "Combo 4 - 12 Personas ",
     "categoria": "combos",
     "precio": 74280,
@@ -246,7 +246,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
   {
-    "id": 88,
+    "id": 119,
     "nombre": "Combo 4 - 24 Personas ",
     "categoria": "combos",
     "precio": 145588,
@@ -259,7 +259,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
   {
-    "id": 89,
+    "id": 120,
     "nombre": "Combo 4 - 48 Personas ",
     "categoria": "combos",
     "precio": 282264,
@@ -272,7 +272,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
   {
-    "id": 90,
+    "id": 121,
     "nombre": "Combo 4 - 72 Personas ",
     "categoria": "combos",
     "precio": 423396,
@@ -285,7 +285,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
   {
-    "id": 91,
+    "id": 122,
     "nombre": "Combo 4 - 96 Personas ",
     "categoria": "combos",
     "precio": 552643,
@@ -298,7 +298,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
   {
-    "id": 92,
+    "id": 123,
     "nombre": "Combo 4 - 144 Personas ",
     "categoria": "combos",
     "precio": 790000,
@@ -311,7 +311,7 @@
     "medida": "Resistente, práctico y listo para uso intensivo"
   },
     {
-    "id": 52,
+    "id": 124,
     "nombre": "Combo 5 - 12 Personas ",
     "categoria": "combos",
     "precio": 63840,
@@ -324,7 +324,7 @@
 "medida": "Excelente opción para catering y salones"
   },
   {
-    "id": 93,
+    "id": 125,
     "nombre": "Combo 5 - 24 Personas ",
     "categoria": "combos",
     "precio": 125000,
@@ -337,7 +337,7 @@
 "medida": "Excelente opción para catering y salones"
   },
   {
-    "id": 94,
+    "id": 126,
     "nombre": "Combo 5 - 48 Personas ",
     "categoria": "combos",
     "precio": 245145,
@@ -350,7 +350,7 @@
 "medida": "Excelente opción para catering y salones"
   },
   {
-    "id": 95,
+    "id": 127,
     "nombre": "Combo 5 - 72 Personas ",
     "categoria": "combos",
     "precio": 359999,
@@ -363,7 +363,7 @@
 "medida": "Excelente opción para catering y salones"
   },
   {
-    "id": 96,
+    "id": 128,
     "nombre": "Combo 5 - 96 Personas ",
     "categoria": "combos",
     "precio": 474969,
@@ -376,7 +376,7 @@
 "medida": "Excelente opción para catering y salones"
   },
   {
-    "id": 97,
+    "id": 129,
     "nombre": "Combo 5 - 144 Personas ",
     "categoria": "combos",
     "precio": 689470,
@@ -389,7 +389,7 @@
 "medida": "Excelente opción para catering y salones"
   },
     {
-    "id": 53,
+    "id": 130,
     "nombre": "Combo 6 - 12 Personas ",
     "categoria": "combos",
     "precio": 131712,
@@ -402,7 +402,7 @@
 "medida": "Ideal para gastronomía, eventos y alquileres"
   },
     {
-    "id": 98,
+    "id": 131,
     "nombre": "Combo 6 - 24 Personas ",
     "categoria": "combos",
     "precio": 260000,
@@ -415,7 +415,7 @@
 "medida": "Ideal para gastronomía, eventos y alquileres"
   },
   {
-    "id": 99,
+    "id": 132,
     "nombre": "Combo 6 - 48 Personas ",
     "categoria": "combos",
     "precio": 516000,
@@ -428,7 +428,7 @@
 "medida": "Ideal para gastronomía, eventos y alquileres"
   },
   {
-    "id": 100,
+    "id": 133,
     "nombre": "Combo 6 - 72 Personas ",
     "categoria": "combos",
     "precio": 766080,
@@ -441,7 +441,7 @@
 "medida": "Ideal para gastronomía, eventos y alquileres"
   },
   {
-    "id": 101,
+    "id": 134,
     "nombre": "Combo 6 - 96 Personas ",
     "categoria": "combos",
     "precio": 1010688,
@@ -454,7 +454,7 @@
 "medida": "Ideal para gastronomía, eventos y alquileres"
   },
   {
-    "id": 102,
+    "id": 135,
     "nombre": "Combo 6 - 144 Personas ",
     "categoria": "combos",
     "precio": 1484776,
@@ -1027,7 +1027,7 @@
     "medida": "20x20cm y 2cm de Altura"
   },
   {
-    "id": 81,
+    "id": 84,
     "nombre": "Ensaladera Cuadrada 24cm Opalina Blanca",
     "categoria": "platos",
     "precio": 5399,
