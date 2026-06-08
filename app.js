@@ -7,7 +7,7 @@ const CATEGORIAS = [
   { id: "bowls",     nombre: "",img: "img/bowls.png" },
   { id: "cafeteria", nombre: "",       img: "img/cafeteria.png" },
   { id: "fuentes",     nombre: "",      img: "img/fuente.png" },
-  { id: "freidora",     nombre: "",        img: "img/freidora.png" },
+  { id: "freidoras",     nombre: "",        img: "img/freidora.png" },
 ];
 
 function renderCategorias() {
@@ -287,14 +287,10 @@ function enviarPorWpp() {
     `• ${p.nombre} (${p.unidad}) x${cantidad} = ${formatPrecio(p.precio * cantidad)}`
   ).join("\n");
 
-  const envioTxt = tipoEnvio === "retiro"
-    ? "📍 *Retiro en local:* San Cristóbal, CABA"
-    : "🚚 *Envío a domicilio*";
-
   const descTxt = desc.pct > 0
     ? `\n🎉 Descuento ${desc.pct}% aplicado: -${formatPrecio(ahorro)}`
     : "";
-  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}${descTxt}\n\n*Total: ${formatPrecio(totalConDesc)}*\n\n${envioTxt}\n\n¿Tienen todo disponible?`;
+  const msg = `Hola! Quiero hacer el siguiente pedido:\n\n${lineas}${descTxt}\n\n*Total: ${formatPrecio(totalConDesc)}*\n\n¿Tienen todo disponible?`;
   window.open(`https://wa.me/${WPP_NUMERO}?text=${encodeURIComponent(msg)}`, "_blank");
 }
 // ── MODAL ─────────────────────────────────────────────────────
