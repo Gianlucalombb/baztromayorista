@@ -1,3 +1,57 @@
+// ── CATEGORÍAS ────────────────────────────────────────────────
+const CATEGORIAS = [
+  { id: "platos",    nombre: "",          img: "img/platos.png" },
+  { id: "vasos_y_copas",     nombre: "",   img: "img/copas.png" },
+  { id: "cubiertos", nombre: "",       img: "img/cubiertos.png" },
+  { id: "combos",    nombre: "",   img: "img/combo.png" },
+  { id: "bowls",     nombre: "",img: "img/bowls.png" },
+  { id: "cafeteria", nombre: "",       img: "img/cafeteria.png" },
+  { id: "fuentes",     nombre: "",      img: "img/fuente.png" },
+  { id: "freidora",     nombre: "",        img: "img/freidora.png" },
+];
+
+function renderCategorias() {
+  const grid = document.getElementById("categorias-grid");
+  if (!grid) return;
+  grid.innerHTML = CATEGORIAS.map(cat => `
+    <div class="cat-card" onclick="mostrarCategoria('${cat.id}', '${cat.nombre}')">
+      <div class="cat-card-img" style="background-image:url('${cat.img}')">
+        <div class="cat-card-overlay"></div>
+        <div class="cat-card-nombre">${cat.nombre}</div>
+      </div>
+    </div>
+  `).join("");
+
+  // footer cats
+  const footerCats = document.getElementById("footer-cats");
+  if (footerCats) {
+    footerCats.innerHTML = CATEGORIAS.map(cat =>
+      `<li><a href="#" onclick="mostrarCategoria('${cat.id}', '${cat.nombre}')">${cat.nombre}</a></li>`
+    ).join("");
+  }
+}
+
+function mostrarHome() {
+  document.getElementById("page-home").style.display = "block";
+  document.getElementById("page-categoria").style.display = "none";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function mostrarCategoria(catId, catNombre) {
+  document.getElementById("page-home").style.display = "none";
+  document.getElementById("page-categoria").style.display = "block";
+  document.getElementById("cat-page-titulo").textContent = catNombre;
+  catActiva = catId;
+  busqueda = "";
+  document.getElementById("buscador").value = "";
+  filtrar();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function toggleMenu() {
+  document.getElementById("header-nav").classList.toggle("open");
+}
+
 // ── CONFIG ──────────────────────────────────────────────────
 const WPP_NUMERO = "5491168660232"; 
 
@@ -454,14 +508,17 @@ function filtrar() {
 }
 
 // ── EVENTOS ──────────────────────────────────────────────────
-document.getElementById("catPills").addEventListener("click", e => {
-  const pill = e.target.closest(".pill");
-  if (!pill) return;
-  document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
-  pill.classList.add("active");
-  catActiva = pill.dataset.cat;
-  filtrar();
-});
+const catPillsEl = document.getElementById("catPills");
+if (catPillsEl) {
+  catPillsEl.addEventListener("click", e => {
+    const pill = e.target.closest(".pill");
+    if (!pill) return;
+    document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+    pill.classList.add("active");
+    catActiva = pill.dataset.cat;
+    filtrar();
+  });
+}
 
 document.getElementById("buscador").addEventListener("input", e => {
   busqueda = e.target.value;
@@ -476,11 +533,11 @@ document.getElementById("carrito-toggle").addEventListener("click", () => {
 // ── CARGA ─────────────────────────────────────────────────────
 fetch("productos.json")
   .then(r => r.json())
-  .then(data => { productos = data; filtrar(); })
-  .catch(() => {
-    document.getElementById("grid").innerHTML =
-      `<p style="padding:2rem;color:#888">Servir con: <code>npx serve .</code></p>`;
-  });
+  .then(data => { 
+    productos = data; 
+    renderCategorias();
+    filtrar(); 
+  })
 
   function filtrarDesdeFooter(cat) {
   catActiva = cat;
