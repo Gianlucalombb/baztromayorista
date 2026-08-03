@@ -76,7 +76,7 @@
     "material": "Incluye 144 platos playos 25 cm, 144 copas y 288 cubiertos de acero inoxidable",
     "medida": "Ideal para uso diario, eventos y gastronomía"
   },
-    {
+   /* {
     "id": 106,
     "nombre": "Combo 2 - 12 Personas",
     "categoria": "combos",
@@ -465,7 +465,7 @@
 "descripcion": "Cafeteria excelente presentación para eventos.",
 "material": "Incluye Taza de Desayuno 250ml con plato, Jarrito de Cafe y Cucharas de Té y Café de acero inoxidable",
 "medida": "Ideal para gastronomía, eventos y alquileres"
-  },
+  },*/
     
   {
     "id": 1,
